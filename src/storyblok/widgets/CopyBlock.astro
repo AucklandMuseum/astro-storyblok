@@ -1,0 +1,8 @@
+---
+import { renderRichText } from "@storyblok/astro";
+
+const { blok } = Astro.props
+const renderedRichText = renderRichText(blok.content)
+---
+
+<div set:html={renderedRichText} ></div>
