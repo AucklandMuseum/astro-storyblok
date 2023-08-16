@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components
+@tailwind utility;
+
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Helvetica'), url("/fonts/GothamNarrow-Light.woff") format("woff"), url("/fonts/GothamNarrow-Light.woff2") format("woff2"); 
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url("/fonts/gotham-narrow-ssm-400.woff") format("woff"), url("/fonts/GothamNarrow-Book.woff2") format("woff2"); 
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Helvetica'), url("/fonts/gotham-narrow-ssm-700.woff") format("woff"), url("/fonts/GothamNarrow-Medium.woff2") format("woff2"); 
+  font-display: swap;
+  }
+
+@layer utility {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}

@@ -1,0 +1,54 @@
+---
+import "../styles/global.css";
+
+import Themes from "astro-themes";
+
+
+
+interface Props {
+  page: any;
+  section?: any;
+}
+
+const { page, section } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <Themes />
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-149E0ZFVZ8"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-149E0ZFVZ8");
+    </script>
+  </head>
+  <body class="bg-white dark:text-slate-300 dark:bg-black">
+
+    <slot />
+
+    <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+  
+</html>
+
+<script  type="text/partytown"
+  src="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/latest/js-cloudimage-responsive.min.js"
+></script>
+<script  type="text/partytown" defer>
+const ciResponsive = new window.CIResponsive({
+  token: "ajrctguoxo",
+});
+</script>
