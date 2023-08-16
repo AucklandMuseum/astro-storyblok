@@ -1,8 +1,9 @@
 ---
-import "../styles/global.css";
-
 import Themes from "astro-themes";
-
+import ToggleTheme from "../components/common/ToggleTheme.astro";
+import BaseHead from "../components/common/BaseHead.astro"
+import BasicScripts from "../components/common/BasicScripts.astro";
+import MegaNavLayout from "../components/common/MegaNavLayout.astro";
 
 
 interface Props {
@@ -16,7 +17,7 @@ const { page, section } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <BaseHead page={page} section={section} />
     <Themes />
     <!-- Google tag (gtag.js) -->
     <script
@@ -32,9 +33,10 @@ const { page, section } = Astro.props;
     </script>
   </head>
   <body class="bg-white dark:text-slate-300 dark:bg-black">
-
+    <!-- <ToggleTheme /> -->
+    <MegaNavLayout />
     <slot />
-
+    <BasicScripts />
     <style is:global>
       img {
         content-visibility: auto;

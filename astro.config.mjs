@@ -10,6 +10,9 @@ import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
+  experimental: {
+		viewTransitions: true
+	},
   integrations: [storyblok({
     //accessToken: env.STORYBLOK_TOKEN,
     accessToken: 'p3nWauZqXhuE8lNTLndLHgtt',
