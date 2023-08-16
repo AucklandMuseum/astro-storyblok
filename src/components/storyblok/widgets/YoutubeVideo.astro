@@ -1,18 +1,28 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import getYouTubeID from "get-youtube-id";
 
-const { blok } = Astro.props
+
+const { blok } = Astro.props;
+
+let blockClassWidth = ["block", "w-full"];
+if (blok.width != 100) blockClassWidth = ["block", "w-[" + blok.width + "]"];
+
+let videoClassList = ["aspect-w-16", "aspect-h-9"];
+if (blok.aspectRatio.indexOf("4:3") > 0)
+	videoClassList = ["aspect-w-4", "aspect-h-3"];
+if (blok.aspectRatio.indexOf("Portait") > 0)
+	videoClassList = ["aspect-w-9", "aspect-h-16"];
+if (blok.aspectRatio.indexOf("Square") > 0)
+	videoClassList = ["aspect-w-1", "aspect-h-1"];
+
+const videoId = getYouTubeID(blok.videoUrl);
+
+const videoEmbedURL = "https://www.youtube.com/embed/" + videoId;
+if (blok.autoplay) blok.videoURL += "?autoplay=1";
 ---
-
-<div {...storyblokEditable(blok)}>
-  <div
-    class='container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-center'
-  >
-    {
-      blok.columns?.map((blok) => {
-        return <StoryblokComponent blok={blok} />
-      })
-    }
-  </div>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+<div class:list={blockClassWidth}>
+	<div class:list={videoClassList}>
+		<lite-youtube videoid={videoId} autoload posterquality="maxresdefault"></lite-youtube>
+	</div>
 </div>

@@ -1,18 +1,63 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { storyblokEditable } from "@storyblok/astro";
+const { blok } = Astro.props;
 
-const { blok } = Astro.props
+const overrideColorStyle = !blok.colorOverride.color ? "text-wrap: balance;" : "text-wrap: balance;color: " + blok.colorOverride?.color;
+
+console.log(overrideColorStyle)
 ---
+<header class:list={[blok.parent + blok.parentStyle]} {...storyblokEditable(blok)}>
 
-<div {...storyblokEditable(blok)}>
-  <div
-    class='container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-center'
-  >
-    {
-      blok.columns?.map((blok) => {
-        return <StoryblokComponent blok={blok} />
-      })
-    }
+  {!blok.behaviour && 
+  <>
+  </>
+  }
+
+{blok.behaviour === 'Page' && 
+
+<div class="w-full">
+  <h1 set:html={blok.title} style={overrideColorStyle} class="prose font-bold text-4xl md:text-5xl leading-tight pb-1" />
+  <h3 set:html={blok.subtitle} class="prose text-gray-600 font-bold text-lg uppercase lg:leading-tight pb-5" />
+</div>
+
+}
+
+{blok.behaviour === 'Section' && 
+
+<div class="w-full">
+  <div class="" set:html={blok.boldSubtitle} />
+  <h3 set:html={blok.subtitle} style={overrideColorStyle} 
+    class="prose font-thin text-gray-400 text-3xl md:text-4xl lg:text-5xl lg:leading-tight" />
+  <div>
+    <h1 set:html={blok.title} style={overrideColorStyle} 
+    class="prose font-normal lg:font-thin text-4xl md:text-5xl lg:text-6xl lg:leading-tight" />
   </div>
 </div>
+
+}
+
+{blok.behaviour === 'Hero' && 
+
+<div set:html={blok.boldSubtitle}
+  class="font-bold uppercase" />
+<h3 set:html={blok.subtitle} 
+  class="prose font-thin text-3xl md:text-2xl xl:text-5xl text-gray-400 xl:leading-tight mt-3 mb-2" />
+<h2 set:html={blok.title} 
+  class="prose text-inherit font-thin text-4xl md:text-3xl xl:text-6xl xl:leading-tight mb-10 md:mb-5 xl:mb-20" />
+
+}
+
+{blok.behaviour === 'Promo' && 
+
+<h2 set:html={blok.title} style={overrideColorStyle} 
+  class="prose font-bold text-4xl" />
+  <h3 set:html={blok.subtitle}
+  class="prose font-light text-4xl uppercase text-gray-400 mt-5 mb-10" />
+}
+</header>
+
+<style>
+  .heroLargeDark  {
+    @apply text-white;
+  }
+</style>

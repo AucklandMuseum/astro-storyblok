@@ -26,6 +26,7 @@ export default defineConfig({
       copyBlock: 'components/storyblok/widgets/CopyBlock',
       hero: 'components/storyblok/widgets/Hero',
       htmlBlock: 'components/storyblok/widgets/HtmlBlock',
+      image: 'components/storyblok/widgets/Image',
       linkImageButton: 'components/storyblok/widgets/HtmlBlock',
       menuItem: 'components/storyblok/widgets/MenuItem',
       titleBlock: 'components/storyblok/widgets/TitleBlock',

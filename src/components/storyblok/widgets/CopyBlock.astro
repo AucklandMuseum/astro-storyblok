@@ -1,8 +1,49 @@
 ---
-import { renderRichText } from "@storyblok/astro";
+import { renderRichText, storyblokEditable } from "@storyblok/astro";
 
 const { blok } = Astro.props
 const renderedRichText = renderRichText(blok.content)
+
+
+let { contentStyle = "Standard", parent, parentStyle } = blok;
 ---
 
-<div set:html={renderedRichText} ></div>
+<div {...storyblokEditable(blok)}
+	class:list={[
+		"prose","copy",
+		"copy" + contentStyle,
+		"copy" + parent,
+		"copy" + parentStyle,
+	]}
+	set:html={renderedRichText.replace(/\n/g, `</br>`)}
+/>
+
+<style>
+	hr {
+		@apply border-t-4
+	}
+	.copy {
+		
+	}
+	.copyStandard{
+		@apply prose max-w-none w-full
+	}
+	.copyLight {
+		@apply prose text-black
+	}
+	.copyDark {
+		@apply prose-invert
+	}
+	.copyLarge {
+		@apply prose-xl md:prose-2xl leading-tight;
+	}
+	.copySmall {
+		@apply prose-sm;
+	}	
+	.copyheroLarge {
+		@apply mt-2 lg:mt-5 xl:mt-10 xl:text-xl
+	}
+	.copyRightPanel {
+		@apply justify-end
+	}
+</style>
