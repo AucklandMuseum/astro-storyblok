@@ -3,8 +3,6 @@ import { storyblokEditable } from "@storyblok/astro";
 const { blok } = Astro.props;
 
 const overrideColorStyle = !blok.colorOverride.color ? "text-wrap: balance;" : "text-wrap: balance;color: " + blok.colorOverride?.color;
-
-console.log(overrideColorStyle)
 ---
 <header class:list={[blok.parent + blok.parentStyle]} {...storyblokEditable(blok)}>
 
