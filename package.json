@@ -10,6 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.9"
+    "@astrojs/netlify": "^2.6.0",
+    "@astrojs/partytown": "^1.2.3",
+    "@astrojs/react": "^2.2.2",
+    "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/vue": "^2.2.1",
+    "@storyblok/astro": "^2.5.11",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.10.9",
+    "astro-compressor": "^0.4.0",
+    "astro-heroicons": "^0.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4"
   }
 }
