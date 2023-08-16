@@ -20,16 +20,16 @@ export default defineConfig({
       region: 'us'
     },
     components: {
-      page: 'storyblok/contentTypes/Page',
-      siteSection: 'storyblok/contentTypes/SiteSection',
-      contentSection: 'storyblok/layout/ContentSection',
-      copyBlock: 'storyblok/widgets/CopyBlock',
-      hero: 'storyblok/widgets/Hero',
-      htmlBlock: 'storyblok/widgets/HtmlBlock',
-      linkImageButton: 'storyblok/widgets/HtmlBlock',
-      menuItem: 'storyblok/widgets/MenuItem',
-      titleBlock: 'storyblok/widgets/TitleBlock',
-      youtubeVideo: 'storyblok/widgets/YoutubeVideo'
+      page: 'components/storyblok/contentTypes/Page',
+      siteSection: 'components/storyblok/contentTypes/SiteSection',
+      contentSection: 'components/storyblok/layout/ContentSection',
+      copyBlock: 'components/storyblok/widgets/CopyBlock',
+      hero: 'components/storyblok/widgets/Hero',
+      htmlBlock: 'components/storyblok/widgets/HtmlBlock',
+      linkImageButton: 'components/storyblok/widgets/HtmlBlock',
+      menuItem: 'components/storyblok/widgets/MenuItem',
+      titleBlock: 'components/storyblok/widgets/TitleBlock',
+      youtubeVideo: 'components/storyblok/widgets/YoutubeVideo'
     }
   }),
   tailwind(), 
