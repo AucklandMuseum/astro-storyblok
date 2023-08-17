@@ -7,25 +7,38 @@ const params = "org_if_sml=0&force_format=webp,jpeg&func=cropfit&gravity=face";
 ---
 
 <figure class="w-full h-full" {...storyblokEditable(blok)}>
-  <Cloudimage client:only="react" src={blok.Image.filename} alt={blok.Image.alt} params={params} />
-  <figcaption
-    id="ctl00_ctl00_cphMain_cphChildColumnMiddle_MainContentArea_widget1_ctl00_tagFigureCaption"
-  >
-{blok.Image.title && <p>{blok.Image.title}</p>}
-{blok.Image.source && <p class="source">{blok.Image.source}</p>}
-{blok.Image.credit && <p class="credit">{blok.Image.credit}</p>}
-{blok.Image.copyright && <p class="copyright">{blok.Image.copyright}</p>}
-{blok.Image.meta_data?.CollectionRecordID && <p class="record"><a href={blok.Image.meta_data?.CollectionRecordID} >Collection Record</a></p>}
+  <Cloudimage
+    client:only="react"
+    src={blok.Image?.filename}
+    alt={blok.Image?.alt}
+    params={params}
+  />
+  <figcaption>
+    {blok.Image?.title && <p>{blok.Image.title}</p>}
+    {blok.Image?.source && <p class="source">{blok.Image.source}</p>}
+    {blok.Image?.credit && <p class="credit">{blok.Image.credit}</p>}
+    {blok.Image?.copyright && <p class="copyright">{blok.Image.copyright}</p>}
+    {
+      blok.Image?.meta_data?.CollectionRecordID && (
+        <p class="record">
+          <a href={blok.Image?.meta_data?.CollectionRecordID}>
+            Collection Record
+          </a>
+        </p>
+      )
+    }
   </figcaption>
 </figure>
+
 <style>
   Cloudimage {
     @apply max-w-full;
   }
   figcaption {
-	@apply bg-gray-100 text-xs p-2.5
+    @apply bg-gray-100 text-xs p-2.5;
   }
-  .source, .copyright {
-	@apply text-gray-400
+  .source,
+  .copyright {
+    @apply text-gray-400;
   }
 </style>

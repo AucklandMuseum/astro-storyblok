@@ -1,0 +1,23 @@
+---
+import { storyblokEditable } from "@storyblok/astro";
+import Cloudimage from "../react/Cloudimage";
+
+const { blok } = Astro.props;
+const params = "org_if_sml=0&force_format=webp,jpeg&func=cropfit&gravity=face";
+console.log(Astro.props)
+---
+
+<figure class="w-full h-full" {...storyblokEditable(blok)}>
+  <Cloudimage
+    client:only="react"
+    src={blok?.filename}
+    alt={blok?.alt}
+    params={params}
+  />
+</figure>
+
+<style>
+  Cloudimage {
+    @apply max-w-full;
+  }
+</style>

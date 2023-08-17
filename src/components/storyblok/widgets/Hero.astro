@@ -1,18 +1,77 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
-
-const { blok } = Astro.props
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import ImageDisplay from "components/common/ImageDisplay.astro"
+const { blok } = Astro.props;
+const type = "hero";
+const { behaviour, parentStyle } = blok;
 ---
 
-<div {...storyblokEditable(blok)}>
-  <div
-    class='container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-center'
-  >
-    {
-      blok.columns?.map((blok:any) => {
-        return <StoryblokComponent blok={blok} />
-      })
-    }
+<div
+  class:list={[
+    "wrapper",
+    type + blok.parentStyle,
+    type + blok.behaviour,
+    type + blok.contentAlignment,
+  ]}
+>
+  <div class={"image"}>
+    <ImageDisplay blok={blok.image} />
+  </div>
+  <div class:list={["content"]}>
+    <div class="h-full flex flex-col justify-center xl:max-w-3xl">
+      <>
+        {
+          blok.contentBlocks?.map((blok: any) => {
+            blok.parent = type + behaviour;
+            blok.parentStyle = parentStyle;
+            return <StoryblokComponent blok={blok} />;
+          })
+        }
+      </>
+    </div>
   </div>
 </div>
+
+<style>
+  .heroDark .content,
+  .heroDark {
+    @apply bg-black;
+  }
+
+  .heroLight .content,
+  .heroLight {
+    @apply bg-gray-100;
+  }
+
+  .wrapper {
+    @apply md:flex md:flex-row w-full;
+  }
+
+  .heroLarge.heroLeft .image {
+    @apply w-full md:flex-grow md:-ml-[50%] order-2 z-0;
+  }
+  .heroLarge.heroRight .image {
+    @apply w-full md:flex-grow md:-mr-[50%] z-0;
+  }
+
+  .heroLarge .content {
+    @apply px-[24px] py-10 lg:py-32 lg:px-16 md:bg-opacity-50 md:w-6/12;
+  }
+  .heroLarge.heroLeft .content {
+    @apply z-10;
+  }
+  .heroLarge.heroRight .content {
+    @apply z-10;
+  }
+
+  .heroMedium .content {
+    @apply px-5 py-10 lg:px-16 md:bg-opacity-50 md:w-6/12;
+  }
+  .heroMedium .image {
+    @apply md:w-6/12;
+  }
+
+  .heroMedium.heroLeft .image {
+    @apply order-1;
+  }
+</style>

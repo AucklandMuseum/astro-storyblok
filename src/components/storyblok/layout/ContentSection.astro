@@ -1,9 +1,9 @@
 ---
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 
-const { blok } = Astro.props
+const { blok } = Astro.props;
 
-blok.parent = "contentSection"
+blok.parent = "contentSection";
 const sectionStyle = blok.sectionStyle;
 ---
 
@@ -17,81 +17,81 @@ const sectionStyle = blok.sectionStyle;
 >
   <div class:list={["content", "content" + blok.contentWidth]}>
     {
-      blok?.contentBlocks.map((blok:any) => {
+      blok?.contentBlocks.map((blok: any) => {
         blok.parent = "Section";
         blok.parentStyle = sectionStyle;
-        return <StoryblokComponent blok={blok} />
+        return <StoryblokComponent blok={blok} />;
       })
     }
   </div>
 </section>
-  <style>
-    section {
-      @apply w-full antialiased m-0;
-    }
-    .sectionStandard {
-      @apply mx-auto px-5 max-w-7xl;
-    }
-    .sectionFullwidth {
-      @apply mx-0 px-0 max-w-full;
-    }
+<style>
+  section {
+    @apply w-full antialiased m-0;
+  }
+  .sectionStandard {
+    @apply mx-auto px-5 max-w-7xl;
+  }
+  .sectionFullwidth {
+    @apply mx-0 px-0 max-w-full;
+  }
 
-    .sectionMTStandard {
-      @apply pt-9;
-    }
-    .sectionMBStandard {
-      @apply pb-4;
-    }
+  .sectionMTStandard {
+    @apply pt-9;
+  }
+  .sectionMBStandard {
+    @apply pb-4;
+  }
 
-    .sectionMTNone {
-      @apply pt-0;
-    }
-    .sectionMBNone {
-      @apply pb-0;
-    }
+  .sectionMTNone {
+    @apply pt-0;
+  }
+  .sectionMBNone {
+    @apply pb-0;
+  }
 
-    .sectionMTSmall {
-      @apply pt-1;
-    }
-    .sectionMBSmall {
-      @apply pb-1;
-    }
+  .sectionMTSmall {
+    @apply pt-1;
+  }
+  .sectionMBSmall {
+    @apply pb-1;
+  }
 
-    .sectionMTLarge {
-      @apply pt-20;
-    }
-    .sectionMBLarge {
-      @apply pb-20;
-    }
-    .sectionSTStandardt {
-      @apply bg-white;
-    }
-    .sectionSTLight {
-      @apply bg-gray-200;
-    }
-    .sectionSTDark {
-      @apply bg-black;
-    }
+  .sectionMTLarge {
+    @apply pt-20;
+  }
+  .sectionMBLarge {
+    @apply pb-20;
+  }
+  .sectionSTStandardt {
+    @apply bg-white;
+  }
+  .sectionSTLight {
+    @apply bg-gray-200;
+  }
+  .sectionSTDark {
+    @apply bg-black;
+  }
 
-    .content {
-      @apply mx-auto w-full 
-    }
-    .contentNarrow {
-      @apply max-w-2xl;
-    }
-    .sectionFullwidth .contentNarrow {
-      @apply px-5 lg:px-32 2xl:px-0
-    }
-    .contentMedium {
-      @apply max-w-4xl;
-    }
-    .contentStandard {
-      @apply md:max-w-7xl;
-    }
-    .sectionFullwidth .contentStandard {
-      @apply w-full px-5 lg:px-16 2xl:px-0
-    }
-    .contentFullwidth {
-      @apply w-full;
-    }
-  </style>
+  .content {
+    @apply mx-auto w-full;
+  }
+  .contentNarrow {
+    @apply max-w-2xl;
+  }
+  .sectionFullwidth .contentNarrow {
+    @apply px-5 lg:px-32 2xl:px-0;
+  }
+  .contentMedium {
+    @apply max-w-4xl;
+  }
+  .contentStandard {
+    @apply md:max-w-7xl;
+  }
+  .sectionFullwidth .contentStandard {
+    @apply w-full px-5 lg:px-16 2xl:px-0;
+  }
+  .contentFullwidth {
+    @apply w-full;
+  }
+</style>
