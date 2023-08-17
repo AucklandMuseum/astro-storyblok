@@ -1,18 +1,14 @@
 ---
 import { storyblokEditable } from "@storyblok/astro";
 import Cloudimage from "../../react/Cloudimage";
+import ImageDisplay from "components/common/ImageDisplay.astro";
 
 const { blok } = Astro.props;
 const params = "org_if_sml=0&force_format=webp,jpeg&func=cropfit&gravity=face";
 ---
 
 <figure class="w-full h-full" {...storyblokEditable(blok)}>
-  <Cloudimage
-    client:only="react"
-    src={blok.Image?.filename}
-    alt={blok.Image?.alt}
-    params={params}
-  />
+  <ImageDisplay blok={blok.Image} />
   <figcaption>
     {blok.Image?.title && <p>{blok.Image.title}</p>}
     {blok.Image?.source && <p class="source">{blok.Image.source}</p>}
