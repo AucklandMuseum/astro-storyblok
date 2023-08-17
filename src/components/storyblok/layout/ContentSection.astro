@@ -1,4 +1,5 @@
 ---
+import { storyblokEditable } from "@storyblok/astro";
 import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 
 const { blok } = Astro.props;
@@ -7,7 +8,7 @@ blok.parent = "contentSection";
 const sectionStyle = blok.sectionStyle;
 ---
 
-<section
+<section {...storyblokEditable(blok)}
   class:list={[
     "section" + blok.sectionWidth,
     "sectionST" + blok.sectionStyle,
