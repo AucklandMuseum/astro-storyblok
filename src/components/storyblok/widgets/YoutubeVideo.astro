@@ -1,28 +1,48 @@
 ---
-import getYouTubeID from "get-youtube-id";
-
+import YouTubeAPI from "components/react/YouTubeAPI";
+import type { YouTubePlayerProps } from "react-player/youtube";
 
 const { blok } = Astro.props;
 
 let blockClassWidth = ["block", "w-full"];
 if (blok.width != 100) blockClassWidth = ["block", "w-[" + blok.width + "]"];
 
-let videoClassList = ["aspect-w-16", "aspect-h-9"];
-if (blok.aspectRatio.indexOf("4:3") > 0)
-	videoClassList = ["aspect-w-4", "aspect-h-3"];
-if (blok.aspectRatio.indexOf("Portait") > 0)
-	videoClassList = ["aspect-w-9", "aspect-h-16"];
-if (blok.aspectRatio.indexOf("Square") > 0)
-	videoClassList = ["aspect-w-1", "aspect-h-1"];
+let videoClassList = ["aspect-video"];
+if (blok.aspectRatio.includes("landscape43")) videoClassList = ["aspect-[4/3]"];
+if (blok.aspectRatio.includes("portrait169"))
+  videoClassList = ["aspect-[9/16]"];
+if (blok.aspectRatio.includes("portrait43"))
+  videoClassList = ["aspect-[3/4]"];
+if (blok.aspectRatio.includes("square")) videoClassList = ["aspect-square"];
 
-const videoId = getYouTubeID(blok.videoUrl);
+let videoProps: YouTubePlayerProps = {};
 
-const videoEmbedURL = "https://www.youtube.com/embed/" + videoId;
-if (blok.autoplay) blok.videoURL += "?autoplay=1";
+if (blok.autoPlay) {
+  videoProps.muted = true;
+  videoProps.playsinline = true;
+  videoProps.playing = true;
+} else {
+  videoProps.playing = false;
+  videoProps.muted = false;
+}
+
+videoProps.url = blok.videoURL;
+videoProps.width = "100%";
+videoProps.height = "100%";
+videoProps.controls = true;
+videoProps.playerVars = { rel: 0 };
 ---
-<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+
 <div class:list={blockClassWidth}>
-	<div class:list={videoClassList}>
-		<lite-youtube videoid={videoId} autoload posterquality="maxresdefault"></lite-youtube>
-	</div>
+  <div class:list={videoClassList}>
+    <YouTubeAPI
+      client:visible
+      url={videoProps.url}
+      autoplay={videoProps.playing}
+      muted={videoProps.muted}
+      width={videoProps.width}
+      height={videoProps.height}
+	  playerVars={videoProps.playerVars}
+    />
+  </div>
 </div>

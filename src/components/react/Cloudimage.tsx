@@ -13,7 +13,7 @@ const cloudimageConfig = {
 }
 };
 
-export default function Cloudimage(props) {
+export default function Cloudimage(props:any) {
   return (
     <CloudimageProvider config={cloudimageConfig}>
       <Img src={props.src} params={props.params} alt={props.alt} className="w-full h-full"/>
