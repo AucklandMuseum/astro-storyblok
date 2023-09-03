@@ -19,7 +19,6 @@ let videoProps: YouTubePlayerProps = {};
 
 if (blok.autoPlay) {
   videoProps.muted = true;
-  videoProps.playsinline = true;
   videoProps.playing = true;
 } else {
   videoProps.playing = false;
@@ -30,7 +29,7 @@ videoProps.url = blok.videoURL;
 videoProps.width = "100%";
 videoProps.height = "100%";
 videoProps.controls = true;
-videoProps.playerVars = { rel: 0 };
+videoProps.playerVars = { rel: 0,  };
 ---
 
 <div class:list={blockClassWidth}>
