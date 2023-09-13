@@ -21,3 +21,5 @@ pnpm-debug.log*
 .DS_Store
 /.vscode/extensions.json
 /.vscode/launch.json
+localhost-key.pem
+localhost.pem

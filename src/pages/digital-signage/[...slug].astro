@@ -1,18 +1,18 @@
 ---
 import { useStoryblokApi } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
-import BaseLayout from '../layouts/BaseLayout.astro'
+import DigitalSignage from '../../layouts/DigitalSignage.astro'
 
 const { slug } = Astro.params;
 
 const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get(`cdn/stories/auckland-museum/${slug === undefined ? 'home' : slug}`, {
+const { data } = await storyblokApi.get(`cdn/stories/digital-signage/${slug === undefined ? 'home' : slug}`, {
   version: 'draft'
 })
 console.log(data)
 const story = data.story
 ---
 
-<BaseLayout>
+<DigitalSignage>
   <StoryblokComponent blok={story.content} />
-</BaseLayout>
+</DigitalSignage>

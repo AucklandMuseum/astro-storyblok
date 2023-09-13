@@ -30,7 +30,8 @@ export default defineConfig({
       linkImageButton: 'components/storyblok/widgets/HtmlBlock',
       menuItem: 'components/storyblok/widgets/MenuItem',
       titleBlock: 'components/storyblok/widgets/TitleBlock',
-      youtubeVideo: 'components/storyblok/widgets/YoutubeVideo'
+      youtubeVideo: 'components/storyblok/widgets/YoutubeVideo',
+      screenLayout: 'components/storyblok/contentTypes/DigitalSignage/ScreenLayout',
     }
   }),
   tailwind(), 
