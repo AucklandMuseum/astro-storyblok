@@ -10,9 +10,7 @@ import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-		viewTransitions: true
-	},
+  server: { port: 3000, host: true},
   integrations: [storyblok({
     //accessToken: env.STORYBLOK_TOKEN,
     accessToken: 'p3nWauZqXhuE8lNTLndLHgtt',
