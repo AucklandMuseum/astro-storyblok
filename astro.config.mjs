@@ -11,6 +11,11 @@ import compressor from "astro-compressor";
 // https://astro.build/config
 export default defineConfig({
   server: { port: 3000, host: true},
+  //base: 'auckland-museum',
+  redirects:{
+    "/[...slug]": "/auckland-museum/[...slug]"
+  },
+  trailingSlash: 'never',
   integrations: [storyblok({
     //accessToken: env.STORYBLOK_TOKEN,
     accessToken: 'p3nWauZqXhuE8lNTLndLHgtt',
