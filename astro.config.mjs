@@ -12,9 +12,6 @@ import compressor from "astro-compressor";
 export default defineConfig({
   server: { port: 3000, host: true},
   //base: 'auckland-museum',
-  redirects:{
-    "/[...slug]": "/auckland-museum/[...slug]"
-  },
   trailingSlash: 'never',
   integrations: [storyblok({
     //accessToken: env.STORYBLOK_TOKEN,
