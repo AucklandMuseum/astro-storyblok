@@ -5,3 +5,5 @@
     X-Frame-Options = "ALLOW-FROM https://app.storyblok.com"
     Access-Control-Allow-Origin = "app.storyblok.com"
     Access-Control-Allow-Credentials = "true"
+[functions]
+

@@ -26,3 +26,4 @@ localhost.pem
 
 # Local Netlify folder
 .netlify
+/*.pem
