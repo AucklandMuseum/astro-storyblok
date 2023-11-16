@@ -1,0 +1,18 @@
+---
+import { storyblokEditable, useStoryblokApi } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+
+const { blok } = Astro.props
+
+const storyblokApi = useStoryblokApi()
+const { data } = await storyblokApi.get('cdn/stories',{by_uuids:blok.contentLookup,version: 'draft'});
+console.log(data.stories)
+---
+
+<div {...storyblokEditable(blok)}>
+  {
+    data.stories?.map((blok: any) => {
+      return <StoryblokComponent blok={blok.content} />
+    })
+  }
+</div>

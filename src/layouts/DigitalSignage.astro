@@ -5,9 +5,328 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      /* CMS Edit Overrides */
+#CMSHeaderPad{
+  display:none!important;  
+}
+
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/GothamNarrow-light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/GothamNarrow-Book.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/GothamNarrow-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/GothamNarrow-Black.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Gotham Narrow';
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/GothamNarrow-Black.woff") format("woff"); }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 35px; 
+  font-family: 'Gotham Narrow';
+}
+
+form{
+  height: inherit;
+  width: inherit;
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: 900;
+  line-height: 8rem;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  font-size: 9rem;
+  font-weight: 100;
+  line-height: 8rem;
+  text-transform: uppercase;
+}
+
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: uppercase;
+  border-bottom: .1rem solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  line-height: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+p.contentsmall,
+span.contentsmall{
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
+p.contenttiny,
+span.contenttiny{
+  font-size: 1.2rem;
+}
+
+br {line-height: 1rem}
+
+strong {
+  font-weight: 400;
+}
+
+.sgn_yellow{
+  color:#FFD300;
+}
+
+.sgn_orange{
+  color:#F99C00;
+}
+
+.sgn_darkorange{
+  color:#FF7700;
+}
+
+.ds_time{
+  font-size: 15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+/* Whats On Promo   */
+.ds-tag-overlay{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.ds-tag-overlay figure{
+  width:100%;
+  height:100%;
+}
+
+.ds-tag-overlay figure img{
+  object-fit: cover;
+}
+
+.ds-tag-overlay.ds-hero-large figure img{
+  width:100%;
+}
+
+.ds-tag-overlay.ds-hero-small figure img{
+  height:100%;
+  width:50%;
+}
+
+.ds-banner{
+  bottom:0;
+  display:flex;
+  align-content: space-between;
+  flex-direction: column;
+  padding: 2.7rem; /* same as timeline wrapper */
+  position: absolute;
+}
+
+.ds-hero-large .ds-banner{
+  width:100%;
+}
+
+.ds-hero-small .ds-banner{
+  width:50%;
+  height:100%;
+  right:0;
+}
+
+.ds-promo-title{
+  margin-bottom: 1em;
+}
+
+.ds-banner-details{
+  flex: 1 1 auto;
+  flex-basis: 100%;
+}
+
+.ds-banner-times{
+  flex: 1 0 auto;
+}
+/*end Whats On Promo */
+
+/* Timeline */
+h5.ds-timeline {
+  margin: 2rem 0 0 0;
+  border-bottom: .1rem solid rgba(255, 255, 255, 0.5);
+}
+
+ul.ds-timeline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.ds-timeline li {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0.5rem 1rem 0 0;
+  padding: 0;
+}
+
+ul.ds-timeline > .ds-future {
+  border: .1rem solid #fff;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+
+ul.ds-timeline .ds-future ~ .ds-future {
+  border: none;
+  font-weight: 200;
+  padding: 0;
+}
+
+ul.ds-timeline li.ds-past {
+  opacity: 0.5;
+}
+/*end Timeline */
+
+/* Slideshow */
+    .ds_slides, .ds_slidecontainer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+        .ds_slidecontainer img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+    .ds_caption {
+        margin: 1.75em;
+        padding: 0.25em;
+        z-index: 10;
+    }
+
+        .ds_caption p {
+            font-size: .75rem !important;
+            line-height: normal;
+            letter-spacing: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Bottom left text */
+    .ds_bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Top left text */
+    .ds_top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* Top right text */
+    .ds_top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    /* Bottom right text */
+    .ds_bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .ds-caption-light {
+        color: white !important;
+    }
+
+    .ds-caption-dark {
+        color: black !important;
+    }
+
+    .ds-caption-bg-light{
+        background-color: rgba(255,255,255,.15);
+    }
+
+    .ds-caption-bg-dark{
+        background-color: rgba(0,0,0,.15);
+    }
+
+    .ds-caption-foltitle p{ }
+    .ds-caption-foldescription p{ }
+    .ds-caption-eoltitle p{ }
+    .ds-caption-eoldescription p{ }
+    .ds-caption-credit p{ }
+    .ds-caption-copyright p{ }
+/* end Slideshow */
+    </style>
   </head>
-  <body>
+
     <slot />
-  </body>
+
   
 </html>

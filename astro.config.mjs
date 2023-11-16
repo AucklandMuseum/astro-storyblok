@@ -20,8 +20,10 @@ export default defineConfig({
       region: 'us'
     },
     components: {
+      //www
       page: 'components/storyblok/contentTypes/Page',
       siteSection: 'components/storyblok/contentTypes/SiteSection',
+      
       contentSection: 'components/storyblok/layout/ContentSection',
       copyBlock: 'components/storyblok/widgets/CopyBlock',
       hero: 'components/storyblok/widgets/Hero',
@@ -31,7 +33,10 @@ export default defineConfig({
       menuItem: 'components/storyblok/widgets/MenuItem',
       titleBlock: 'components/storyblok/widgets/TitleBlock',
       youtubeVideo: 'components/storyblok/widgets/YoutubeVideo',
+      //Digital Signage
       screenLayout: 'components/storyblok/contentTypes/DigitalSignage/ScreenLayout',
+      screen: 'components/storyblok/widgets/DigitalSignage/Screen',
+      sharedScreen: 'components/storyblok/widgets/DigitalSignage/SharedScreen',
     }
   }),
   tailwind(), 
@@ -64,5 +69,7 @@ export default defineConfig({
       }
     }
   },
-  adapter: netlify()
+  adapter: netlify({
+    dist: new URL('./dist/', import.meta.url), functionPerRoute: true, builders: true,
+  })
 });

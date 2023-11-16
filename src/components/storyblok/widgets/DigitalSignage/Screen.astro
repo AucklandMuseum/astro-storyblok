@@ -3,8 +3,13 @@ import { storyblokEditable } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 
 const { blok } = Astro.props
+console.log(blok)
 ---
 
 <div {...storyblokEditable(blok)}>
-  <div set:html={blok.htmlCode}></div>
+  {
+    blok.content?.map((blok: any) => {
+      return <StoryblokComponent blok={blok} />
+    })
+  }
 </div>
