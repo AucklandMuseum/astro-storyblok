@@ -70,6 +70,6 @@ export default defineConfig({
     }
   },
   adapter: netlify({
-    dist: new URL('./dist/', import.meta.url), functionPerRoute: true, builders: true,
+    
   })
 });
