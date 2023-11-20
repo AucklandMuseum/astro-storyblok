@@ -2,14 +2,45 @@
 import { storyblokEditable } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 
+import * as DigitalSignage from 'functions/DigitalSignage.ts'
+
 const { blok } = Astro.props
-console.log(blok)
+
+const textColor = blok.textColour.color ? blok.textColour.color : "#FFFFFF";
+const backgroundColor = blok.backgroundColour.color
+  ? blok.backgroundColour.color
+  : "#000000";
+const borderColor = blok.borderColour.color
+  ? blok.borderColour.color
+  : "#000000";
+const borderWidth = blok.borderWidth ? blok.borderWidth : "none";
+
+const resolution = blok.resolution ? blok.resolution : "FHD";
+const screenWidth = DigitalSignage.ResolutionWidth(resolution);
+const screenHeight = DigitalSignage.ResolutionHeight(resolution);
+const blokWidth = screenWidth * (blok.widthNumber ? blok.widthNumber : 1);
+const blokHeight = screenHeight * (blok.heightNumber ? blok.heightNumber : 1);
 ---
 
-<div {...storyblokEditable(blok)}>
+<div {...storyblokEditable(blok)}
+style={`color:${textColor};background-color:${backgroundColor};outline-style:solid;outline-color:${borderColor};width:${blokWidth}px;height:${blokHeight}px;`}
+class:list={["borderWidth" + borderWidth]}
+>
   {
     blok.content?.map((blok: any) => {
       return <StoryblokComponent blok={blok} />
     })
   }
 </div>
+
+<style>
+  .borderWidthnone  {
+    @apply outline-none
+  }
+  .borderWidthsmall  {
+    @apply outline-offset-[-2em] outline-[2em] p-[2em]
+  }
+  .borderWidthlarge  {
+    @apply outline-offset-[-5em] outline-[5em] p-[5em]
+  }
+</style>

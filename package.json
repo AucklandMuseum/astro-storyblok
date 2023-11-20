@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 -n localhost --cert localhost.pem --key localhost-key.pem"
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 -n localhost --cert localhost.pem --key localhost-key.pem",
+    "generate-sb-types": "storyblok-generate-ts source=./components.1016036.json target=./component-types-sb"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^3.1.0",
@@ -45,6 +46,7 @@
     "astro-themes": "^0.2.4",
     "cypress": "^13.5.0",
     "netlify-cli": "^17.2.2",
+    "storyblok-generate-ts": "^2.0.1",
     "typescript": "^5.2.2"
   }
 }

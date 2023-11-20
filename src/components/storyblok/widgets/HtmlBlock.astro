@@ -1,10 +1,7 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { storyblokEditable } from "@storyblok/astro";
 
-const { blok } = Astro.props
+const { blok } = Astro.props;
 ---
 
-<div {...storyblokEditable(blok)}>
-  <div set:html={blok.htmlCode}></div>
-</div>
+<div {...storyblokEditable(blok)} class="w-max" set:html={blok.htmlCode} />

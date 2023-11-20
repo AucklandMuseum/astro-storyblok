@@ -1,0 +1,59 @@
+---
+import { renderRichText, storyblokEditable } from '@storyblok/astro'
+
+const { blok } = Astro.props
+
+const textColor = blok.textColour.color ? blok.textColour.color : "#FFFFFF";
+const backgroundColor = blok.backgroundColour.color
+  ? blok.backgroundColour.color
+  : "#000000";
+
+const renderedRichText = renderRichText(blok.description)
+const bgimage = "bg-[url(' + blok.image.filename + ')]"
+
+---
+
+<div {...storyblokEditable(blok)}
+style={`color:${textColor};background-color:${backgroundColor};`}
+class:list={["w-full h-full flex justify-items-stretch",`promo-${blok.size}`]}
+>
+  <div class="flex-grow w-full h-full bg-cover" style=`background-image:url('${blok.image.filename}')`>
+  </div>
+  <div class:list={["flex grow flex-col self-end p-[1em] justify-items-stretch",`banner-${blok.size}` ]}>
+      
+    <div class="grow self-start h-max w-full">
+        <h3 set:html={blok.title}></h3>
+        <div set:html={renderedRichText}></div>
+    </div>
+    <div class="grow-0 self-end w-full">
+      <h5>FREE WITH MUSEUM ENTRY</h5>
+      <ul>
+        
+      </ul>
+      <h5>TE MARAE Ā​TEA MĀORI COURT</h5>
+    </div>
+ 
+  </div>
+
+
+</div>
+
+
+
+<style>
+  .promo-large {
+    @apply flex-col
+  }
+  
+  .promo-small{
+    @apply flex-row
+  }
+
+  .banner-large {
+    @apply w-full
+  }
+  
+  .banner-small{
+    @apply w-1/2 h-full
+  }
+</style>

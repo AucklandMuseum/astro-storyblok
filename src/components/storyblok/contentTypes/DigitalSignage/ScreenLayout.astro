@@ -1,17 +1,30 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { storyblokEditable } from "@storyblok/astro";
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 
-const { blok } = Astro.props
+import * as DigitalSignage from 'functions/DigitalSignage.ts'
+
+const { blok } = Astro.props;
 
 const textColor = blok.textColour.color ? blok.textColour.color : "#FFFFFF";
-const backgroundColor = blok.backgroundColour.color ? blok.backgroundColour.color : "#000000";
+const backgroundColor = blok.backgroundColour.color
+  ? blok.backgroundColour.color
+  : "#000000";
+
+const resolution = blok.resolution ? blok.resolution : "FHD";
+const screenWidth = DigitalSignage.ResolutionWidth(resolution);
+const screenHeight = DigitalSignage.ResolutionHeight(resolution);
+const blokWidth = screenWidth * (blok.widthNumber ? blok.widthNumber : 1);
+const blokHeight = screenHeight * (blok.heightNumber ? blok.heightNumber : 1);
 ---
 
-<body {...storyblokEditable(blok)} style={`color:${textColor};background-color:${backgroundColor};`}>
+<body
+  {...storyblokEditable(blok)}
+  style={`color:${textColor};background-color:${backgroundColor};width:${blokWidth}px;height:${blokHeight}px;`}
+>
   {
     blok.content?.map((blok: any) => {
-      return <StoryblokComponent blok={blok} />
+      return <StoryblokComponent blok={blok} />;
     })
   }
 </body>

@@ -37,6 +37,7 @@ export default defineConfig({
       screenLayout: 'components/storyblok/contentTypes/DigitalSignage/ScreenLayout',
       screen: 'components/storyblok/widgets/DigitalSignage/Screen',
       sharedScreen: 'components/storyblok/widgets/DigitalSignage/SharedScreen',
+      whatsOnPromo: 'components/storyblok/widgets/DigitalSignage/WhatsOnPromo',
     }
   }),
   tailwind(), 

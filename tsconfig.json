@@ -12,6 +12,6 @@
     "jsx": "preserve",
     "jsxImportSource": "react",
     "allowJs": true,
-    "types": ["vite/client"]
+    "types": ["vite/client","/"]
   }
 }
