@@ -23,7 +23,7 @@ const blokHeight = screenHeight * (blok.heightNumber ? blok.heightNumber : 1);
 ---
 
 <div {...storyblokEditable(blok)}
-style={`color:${textColor};background-color:${backgroundColor};outline-style:solid;outline-color:${borderColor};width:${blokWidth}px;height:${blokHeight}px;`}
+style={`color:${textColor};background-color:${backgroundColor};outline-style:solid;outline-color:${borderColor};width:${blokWidth}px;height:${blokHeight}px;display:flex;flex-direction: ${blok.panelFlow};`}
 class:list={["borderWidth" + borderWidth]}
 >
   {

@@ -21,10 +21,10 @@ const blokHeight = screenHeight * (blok.heightNumber ? blok.heightNumber : 1);
 <body
   {...storyblokEditable(blok)}
   style={`color:${textColor};background-color:${backgroundColor};width:${blokWidth}px;height:${blokHeight}px;`}
->
+><div class="flex" style=`flex-direction: ${blok.panelFlow};`>
   {
     blok.content?.map((blok: any) => {
       return <StoryblokComponent blok={blok} />;
     })
-  }
+  }</div>
 </body>

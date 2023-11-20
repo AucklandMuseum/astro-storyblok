@@ -9,20 +9,18 @@ const backgroundColor = blok.backgroundColour.color
   : "#000000";
 
 const renderedRichText = renderRichText(blok.description)
-const bgimage = "bg-[url(' + blok.image.filename + ')]"
-
 ---
 
 <div {...storyblokEditable(blok)}
 style={`color:${textColor};background-color:${backgroundColor};`}
 class:list={["w-full h-full flex justify-items-stretch",`promo-${blok.size}`]}
 >
-  <div class="flex-grow w-full h-full bg-cover" style=`background-image:url('${blok.image.filename}')`>
+  <div class:list={["flex-grow bg-cover",`image-${blok.size}`]} style=`background-image:url('${blok.image.filename}')`>
   </div>
-  <div class:list={["flex grow flex-col self-end p-[1em] justify-items-stretch",`banner-${blok.size}` ]}>
+  <div class:list={["flex grow flex-col self-end p-[2.7em] justify-items-stretch",`banner-${blok.size}` ]}>
       
     <div class="grow self-start h-max w-full">
-        <h3 set:html={blok.title}></h3>
+        <h3 class="mb-4" set:html={blok.title}></h3>
         <div set:html={renderedRichText}></div>
     </div>
     <div class="grow-0 self-end w-full">
@@ -47,6 +45,14 @@ class:list={["w-full h-full flex justify-items-stretch",`promo-${blok.size}`]}
   
   .promo-small{
     @apply flex-row
+  }
+
+  .image-large {
+    @apply w-full h-full
+  }
+  
+  .image-small{
+    @apply w-1/2 h-full
   }
 
   .banner-large {

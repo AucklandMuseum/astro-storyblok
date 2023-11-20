@@ -4,4 +4,4 @@ import { storyblokEditable } from "@storyblok/astro";
 const { blok } = Astro.props;
 ---
 
-<div {...storyblokEditable(blok)} class="w-max" set:html={blok.htmlCode} />
+<div {...storyblokEditable(blok)} class="w-full" set:html={blok.htmlCode} />

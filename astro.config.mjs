@@ -35,8 +35,8 @@ export default defineConfig({
       youtubeVideo: 'components/storyblok/widgets/YoutubeVideo',
       //Digital Signage
       screenLayout: 'components/storyblok/contentTypes/DigitalSignage/ScreenLayout',
-      screen: 'components/storyblok/widgets/DigitalSignage/Screen',
-      sharedScreen: 'components/storyblok/widgets/DigitalSignage/SharedScreen',
+      panel: 'components/storyblok/widgets/DigitalSignage/Panel',
+      sharedPanel: 'components/storyblok/widgets/DigitalSignage/SharedPanel',
       whatsOnPromo: 'components/storyblok/widgets/DigitalSignage/WhatsOnPromo',
     }
   }),
