@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 -n localhost --cert localhost.pem --key localhost-key.pem",
-    "generate-sb-types": "storyblok-generate-ts source=./components.1016036.json target=./component-types-sb"
+    "pull-components":"storyblok pull-components --space=1016036 -f auckland-museum",
+    "generate-sb-types": "storyblok-generate-ts source=./components.auckland-museum.json target=./component-types-auckland-museum"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^3.1.0",

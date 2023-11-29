@@ -1,6 +1,6 @@
 @tailwind base;
-@tailwind components
-@tailwind utility;
+@tailwind components;
+@tailwind utilities;
 
 
 @font-face {
@@ -36,7 +36,7 @@
   }
 
 
-@layer utility {
+@layer utilities {
     /* Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;

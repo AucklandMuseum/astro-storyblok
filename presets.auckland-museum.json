@@ -1,0 +1,97 @@
+{
+  "presets": [
+    {
+      "id": 918,
+      "name": "Standard",
+      "preset": {
+        "seo": {
+          "_uid": "3b56eac4-ec2a-46c0-a746-7d0ccf3784be",
+          "title": "Home",
+          "plugin": "seo_metatags",
+          "og_image": "",
+          "og_title": "",
+          "description": "Auckland Museum",
+          "twitter_image": "",
+          "twitter_title": "",
+          "og_description": "",
+          "twitter_description": ""
+        },
+        "_uid": "15f22773-451a-4d34-b291-008d2a0a89fd",
+        "body": [
+          {
+            "_uid": "b7790a52-6055-42af-9c37-f94753ee5fff",
+            "component": "amContentSection",
+            "contentWidth": "standard",
+            "sectionStyle": "standard",
+            "sectionWidth": "standard",
+            "contentBlocks": [
+              {
+                "_uid": "f81b3358-e7d2-42b6-8b00-07527e4a25d3",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "This is some text",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "And a ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "link",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "/home",
+                                "uuid": "dd7b6e7c-5325-4f6b-a917-c213fe5c8bb8",
+                                "anchor": null,
+                                "custom": {},
+                                "target": "_self",
+                                "linktype": "story"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "text": "...",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph"
+                    }
+                  ]
+                },
+                "component": "amCopyBlock",
+                "contentStyle": "standard"
+              }
+            ],
+            "sectionMarginTop": "standard",
+            "sectionMarginBottom": "standard"
+          }
+        ],
+        "component": "amPage"
+      },
+      "component_id": 97852,
+      "space_id": 1016036,
+      "created_at": "2023-08-15T00:19:28.789Z",
+      "updated_at": "2023-08-15T00:19:28.789Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    }
+  ]
+}

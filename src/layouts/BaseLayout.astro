@@ -1,20 +1,20 @@
 ---
 import Themes from "astro-themes";
 import ToggleTheme from "../components/common/ToggleTheme.astro";
-import BaseHead from "../components/common/BaseHead.astro"
+import BaseHead from "../components/common/BaseHead.astro";
 import BasicScripts from "../components/common/BasicScripts.astro";
 import MegaNavLayout from "../components/common/MegaNavLayout.astro";
-
+import type { ISbStoryData } from "@storyblok/astro";
 
 interface Props {
-  page: any;
-  section?: any;
+  page: ISbStoryData;
+  section?: ISbStoryData;
 }
 
 const { page, section } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead page={page} section={section} />
@@ -42,15 +42,14 @@ const { page, section } = Astro.props;
         content-visibility: auto;
       }
     </style>
+    <script
+      type="text/partytown"
+      src="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/latest/js-cloudimage-responsive.min.js"
+    ></script>
+    <script type="text/partytown" defer>
+      const ciResponsive = new window.CIResponsive({
+        token: "ajrctguoxo",
+      });
+    </script>
   </body>
-  
 </html>
-
-<script  type="text/partytown"
-  src="https://cdn.scaleflex.it/plugins/js-cloudimage-responsive/latest/js-cloudimage-responsive.min.js"
-></script>
-<script  type="text/partytown" defer>
-const ciResponsive = new window.CIResponsive({
-  token: "ajrctguoxo",
-});
-</script>
