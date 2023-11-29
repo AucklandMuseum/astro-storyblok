@@ -29,19 +29,19 @@ export default defineConfig({
       region: 'us'
     },
     components: {
-      //www
+      //Page Types
       amPage: 'components/storyblok/contentTypes/Page',
-      siteSection: 'components/storyblok/contentTypes/SiteSection',
-      
-      contentSection: 'components/storyblok/layout/ContentSection',
-      copyBlock: 'components/storyblok/widgets/CopyBlock',
-      hero: 'components/storyblok/widgets/Hero',
-      htmlBlock: 'components/storyblok/widgets/HtmlBlock',
-      image: 'components/storyblok/widgets/Image',
-      linkImageButton: 'components/storyblok/widgets/HtmlBlock',
-      menuItem: 'components/storyblok/widgets/MenuItem',
-      titleBlock: 'components/storyblok/widgets/TitleBlock',
-      youtubeVideo: 'components/storyblok/widgets/YoutubeVideo',
+      amSiteSection: 'components/storyblok/contentTypes/SiteSection',
+      //Widgets
+      amContentSection: 'components/storyblok/layout/ContentSection',
+      amCopyBlock: 'components/storyblok/widgets/CopyBlock',
+      amHero: 'components/storyblok/widgets/Hero',
+      amHtmlBlock: 'components/storyblok/widgets/HtmlBlock',
+      amImage: 'components/storyblok/widgets/Image',
+      amLinkImageButton: 'components/storyblok/widgets/HtmlBlock',
+      amMenuItem: 'components/storyblok/widgets/MenuItem',
+      amTitleBlock: 'components/storyblok/widgets/TitleBlock',
+      amYoutubeVideo: 'components/storyblok/widgets/YoutubeVideo',
     }
   }),
   tailwind(), 
