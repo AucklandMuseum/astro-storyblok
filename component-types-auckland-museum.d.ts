@@ -68,17 +68,17 @@ export interface AmHeroStoryblok {
     | AmSiteSectionStoryblok
     | AmTitleBlockStoryblok
     | AmYoutubeVideoStoryblok
-    | CopyBlockDsStoryblok
-    | HtmlBlockDsStoryblok
-    | ImageDsStoryblok
-    | ImageLoopStoryblok
-    | PanelStoryblok
-    | ScreenLayoutStoryblok
-    | SharedPanelStoryblok
-    | SignageAliasStoryblok
-    | VideoLoopStoryblok
-    | VideoSourceStoryblok
-    | WhatsOnPromoStoryblok
+    | DsCopyBlockStoryblok
+    | DsHtmlBlockStoryblok
+    | DsImageStoryblok
+    | DsImageLoopStoryblok
+    | DsPanelStoryblok
+    | DsScreenLayoutStoryblok
+    | DsSharedPanelStoryblok
+    | DsSignageAliasStoryblok
+    | DsVideoLoopStoryblok
+    | DsVideoSourceStoryblok
+    | DsWhatsOnPromoStoryblok
   )[];
   contentAlignment: "Left" | "Right";
   behaviour: "Small" | "Medium" | "Large";
@@ -187,17 +187,17 @@ export interface AmPageStoryblok {
     | AmSiteSectionStoryblok
     | AmTitleBlockStoryblok
     | AmYoutubeVideoStoryblok
-    | CopyBlockDsStoryblok
-    | HtmlBlockDsStoryblok
-    | ImageDsStoryblok
-    | ImageLoopStoryblok
-    | PanelStoryblok
-    | ScreenLayoutStoryblok
-    | SharedPanelStoryblok
-    | SignageAliasStoryblok
-    | VideoLoopStoryblok
-    | VideoSourceStoryblok
-    | WhatsOnPromoStoryblok
+    | DsCopyBlockStoryblok
+    | DsHtmlBlockStoryblok
+    | DsImageStoryblok
+    | DsImageLoopStoryblok
+    | DsPanelStoryblok
+    | DsScreenLayoutStoryblok
+    | DsSharedPanelStoryblok
+    | DsSignageAliasStoryblok
+    | DsVideoLoopStoryblok
+    | DsVideoSourceStoryblok
+    | DsWhatsOnPromoStoryblok
   )[];
   redirects?: (
     | AmContentSectionStoryblok
@@ -211,17 +211,17 @@ export interface AmPageStoryblok {
     | AmSiteSectionStoryblok
     | AmTitleBlockStoryblok
     | AmYoutubeVideoStoryblok
-    | CopyBlockDsStoryblok
-    | HtmlBlockDsStoryblok
-    | ImageDsStoryblok
-    | ImageLoopStoryblok
-    | PanelStoryblok
-    | ScreenLayoutStoryblok
-    | SharedPanelStoryblok
-    | SignageAliasStoryblok
-    | VideoLoopStoryblok
-    | VideoSourceStoryblok
-    | WhatsOnPromoStoryblok
+    | DsCopyBlockStoryblok
+    | DsHtmlBlockStoryblok
+    | DsImageStoryblok
+    | DsImageLoopStoryblok
+    | DsPanelStoryblok
+    | DsScreenLayoutStoryblok
+    | DsSharedPanelStoryblok
+    | DsSignageAliasStoryblok
+    | DsVideoLoopStoryblok
+    | DsVideoSourceStoryblok
+    | DsWhatsOnPromoStoryblok
   )[];
   _uid: string;
   component: "amPage";
@@ -266,26 +266,26 @@ export interface AmYoutubeVideoStoryblok {
   [k: string]: any;
 }
 
-export interface CopyBlockDsStoryblok {
+export interface DsCopyBlockStoryblok {
   content?: RichtextStoryblok;
   _uid: string;
-  component: "copyBlockDS";
+  component: "dsCopyBlock";
   [k: string]: any;
 }
 
-export interface HtmlBlockDsStoryblok {
+export interface DsHtmlBlockStoryblok {
   htmlCode?: string;
   _uid: string;
-  component: "htmlBlockDS";
+  component: "dsHtmlBlock";
   [k: string]: any;
 }
 
-export interface ImageDsStoryblok {
+export interface DsImageStoryblok {
   asset?: AssetStoryblok;
   width?: string;
   height?: string;
   _uid: string;
-  component: "imageDS";
+  component: "dsImage";
   [k: string]: any;
 }
 
@@ -299,18 +299,18 @@ export type MultiassetStoryblok = {
   [k: string]: any;
 }[];
 
-export interface ImageLoopStoryblok {
+export interface DsImageLoopStoryblok {
   name?: string;
   timing?: any;
   displayTime?: string;
   fadeTime?: string;
   items?: MultiassetStoryblok;
   _uid: string;
-  component: "imageLoop";
+  component: "dsImageLoop";
   [k: string]: any;
 }
 
-export interface PanelStoryblok {
+export interface DsPanelStoryblok {
   name?: string;
   size?: any;
   widthNumber?: string;
@@ -323,24 +323,24 @@ export interface PanelStoryblok {
   border?: any;
   borderWidth?: "" | "small" | "large";
   content?: (
-    | CopyBlockDsStoryblok
-    | HtmlBlockDsStoryblok
-    | ImageDsStoryblok
-    | ImageLoopStoryblok
-    | PanelStoryblok
-    | ScreenLayoutStoryblok
-    | SharedPanelStoryblok
-    | SignageAliasStoryblok
-    | VideoLoopStoryblok
-    | VideoSourceStoryblok
-    | WhatsOnPromoStoryblok
+    | DsCopyBlockStoryblok
+    | DsHtmlBlockStoryblok
+    | DsImageStoryblok
+    | DsImageLoopStoryblok
+    | DsPanelStoryblok
+    | DsScreenLayoutStoryblok
+    | DsSharedPanelStoryblok
+    | DsSignageAliasStoryblok
+    | DsVideoLoopStoryblok
+    | DsVideoSourceStoryblok
+    | DsWhatsOnPromoStoryblok
   )[];
   _uid: string;
-  component: "panel";
+  component: "dsPanel";
   [k: string]: any;
 }
 
-export interface ScreenLayoutStoryblok {
+export interface DsScreenLayoutStoryblok {
   size?: any;
   widthNumber: string;
   heightNumber: string;
@@ -350,46 +350,46 @@ export interface ScreenLayoutStoryblok {
   panelFlow?: "column" | "row";
   Colours?: any;
   content?: (
-    | CopyBlockDsStoryblok
-    | HtmlBlockDsStoryblok
-    | ImageDsStoryblok
-    | ImageLoopStoryblok
-    | PanelStoryblok
-    | ScreenLayoutStoryblok
-    | SharedPanelStoryblok
-    | SignageAliasStoryblok
-    | VideoLoopStoryblok
-    | VideoSourceStoryblok
-    | WhatsOnPromoStoryblok
+    | DsCopyBlockStoryblok
+    | DsHtmlBlockStoryblok
+    | DsImageStoryblok
+    | DsImageLoopStoryblok
+    | DsPanelStoryblok
+    | DsScreenLayoutStoryblok
+    | DsSharedPanelStoryblok
+    | DsSignageAliasStoryblok
+    | DsVideoLoopStoryblok
+    | DsVideoSourceStoryblok
+    | DsWhatsOnPromoStoryblok
   )[];
   _uid: string;
-  component: "screenLayout";
+  component: "dsScreenLayout";
   [k: string]: any;
 }
 
-export interface SharedPanelStoryblok {
+export interface DsSharedPanelStoryblok {
   name: string;
   contentLookup?: StoryblokStory<ScreenStoryblok> | StoryblokStory<PanelStoryblok> | string;
   _uid: string;
-  component: "sharedPanel";
+  component: "dsSharedPanel";
   [k: string]: any;
 }
 
-export interface SignageAliasStoryblok {
+export interface DsSignageAliasStoryblok {
   sourceUrl?: StoryblokStory<ScreenLayoutStoryblok> | string;
   _uid: string;
-  component: "signageAlias";
+  component: "dsSignageAlias";
   [k: string]: any;
 }
 
-export interface VideoLoopStoryblok {
-  videoAssets?: VideoSourceStoryblok[];
+export interface DsVideoLoopStoryblok {
+  videoAssets?: DsVideoSourceStoryblok[];
   _uid: string;
-  component: "videoLoop";
+  component: "dsVideoLoop";
   [k: string]: any;
 }
 
-export interface VideoSourceStoryblok {
+export interface DsVideoSourceStoryblok {
   name?: string;
   videoURL?: string;
   caption?: any;
@@ -403,11 +403,11 @@ export interface VideoSourceStoryblok {
   textColour?: "" | "ds-caption-light" | "ds-caption-dark";
   backgroundColour?: "" | "ds-caption-bg-light" | "ds-caption-bg-dark";
   _uid: string;
-  component: "videoSource";
+  component: "dsVideoSource";
   [k: string]: any;
 }
 
-export interface WhatsOnPromoStoryblok {
+export interface DsWhatsOnPromoStoryblok {
   name?: string;
   Colours?: any;
   title?: string;
@@ -420,6 +420,6 @@ export interface WhatsOnPromoStoryblok {
   tnewTitle?: string;
   manualTiming?: string;
   _uid: string;
-  component: "whatsOnPromo";
+  component: "dsWhatsOnPromo";
   [k: string]: any;
 }

@@ -814,10 +814,10 @@
       "component_group_name": "AWMM"
     },
     {
-      "name": "copyBlockDS",
-      "display_name": "Copy Block DS",
+      "name": "dsCopyBlock",
+      "display_name": "DS Copy Block",
       "created_at": "2023-11-27T22:17:23.659Z",
-      "updated_at": "2023-11-28T01:25:44.576Z",
+      "updated_at": "2023-11-29T23:40:24.284Z",
       "id": 120970,
       "schema": {
         "content": {
@@ -866,17 +866,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "Copy Block DS",
+      "real_name": "DS Copy Block",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-text-c",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "htmlBlockDS",
-      "display_name": "HTML Block DS",
+      "name": "dsHtmlBlock",
+      "display_name": "DS HTML Block",
       "created_at": "2023-11-27T21:32:48.761Z",
-      "updated_at": "2023-11-28T01:39:43.206Z",
+      "updated_at": "2023-11-29T23:40:45.572Z",
       "id": 120956,
       "schema": {
         "htmlCode": {
@@ -893,17 +893,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "HTML Block DS",
+      "real_name": "DS HTML Block",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-keyboard",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "imageDS",
-      "display_name": "Image DS",
+      "name": "dsImage",
+      "display_name": "DS Image",
       "created_at": "2023-11-27T23:34:52.150Z",
-      "updated_at": "2023-11-28T00:04:24.807Z",
+      "updated_at": "2023-11-29T23:41:05.160Z",
       "id": 120984,
       "schema": {
         "asset": {
@@ -934,17 +934,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "Image DS",
+      "real_name": "DS Image",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-image",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "imageLoop",
-      "display_name": null,
+      "name": "dsImageLoop",
+      "display_name": "DS Image Loop",
       "created_at": "2023-11-21T21:19:11.041Z",
-      "updated_at": "2023-11-29T21:16:07.016Z",
+      "updated_at": "2023-11-29T23:41:42.221Z",
       "id": 120079,
       "schema": {
         "name": {
@@ -996,17 +996,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "imageLoop",
+      "real_name": "DS Image Loop",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-@",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "panel",
-      "display_name": null,
+      "name": "dsPanel",
+      "display_name": "DS Panel",
       "created_at": "2023-11-14T00:46:49.092Z",
-      "updated_at": "2023-11-28T00:10:11.404Z",
+      "updated_at": "2023-11-29T23:42:02.060Z",
       "id": 118763,
       "schema": {
         "name": {
@@ -1220,17 +1220,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "panel",
+      "real_name": "DS Panel",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-monitor",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "screenLayout",
-      "display_name": null,
+      "name": "dsScreenLayout",
+      "display_name": "DS Screen Layout",
       "created_at": "2023-09-03T23:38:30.460Z",
-      "updated_at": "2023-11-27T02:29:47.651Z",
+      "updated_at": "2023-11-29T23:42:17.778Z",
       "id": 104493,
       "schema": {
         "size": {
@@ -1402,17 +1402,17 @@
       "is_nestable": false,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "screenLayout",
+      "real_name": "DS Screen Layout",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-1-2block",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "sharedPanel",
-      "display_name": null,
+      "name": "dsSharedPanel",
+      "display_name": "DS Shared Panel",
       "created_at": "2023-11-14T01:26:21.303Z",
-      "updated_at": "2023-11-27T21:53:40.402Z",
+      "updated_at": "2023-11-29T23:42:37.020Z",
       "id": 118765,
       "schema": {
         "name": {
@@ -1443,17 +1443,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "sharedPanel",
+      "real_name": "DS Shared Panel",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-share",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "signageAlias",
-      "display_name": null,
+      "name": "dsSignageAlias",
+      "display_name": "DS Signage Alias",
       "created_at": "2023-11-22T20:31:35.990Z",
-      "updated_at": "2023-11-22T21:09:39.990Z",
+      "updated_at": "2023-11-29T23:42:57.864Z",
       "id": 120220,
       "schema": {
         "sourceUrl": {
@@ -1474,17 +1474,17 @@
       "is_nestable": false,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "signageAlias",
+      "real_name": "DS Signage Alias",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-tag",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "videoLoop",
-      "display_name": null,
+      "name": "dsVideoLoop",
+      "display_name": "DS Video Loop",
       "created_at": "2023-11-21T00:25:20.905Z",
-      "updated_at": "2023-11-21T00:52:22.183Z",
+      "updated_at": "2023-11-29T23:43:29.117Z",
       "id": 119760,
       "schema": {
         "videoAssets": {
@@ -1492,7 +1492,7 @@
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
-            "videoSource"
+            "dsVideoSource"
           ],
           "component_group_whitelist": [],
           "key": "files",
@@ -1506,17 +1506,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "videoLoop",
+      "real_name": "DS Video Loop",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-resize-fc",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "videoSource",
-      "display_name": null,
+      "name": "dsVideoSource",
+      "display_name": "DS Video Source",
       "created_at": "2023-11-21T00:42:54.501Z",
-      "updated_at": "2023-11-27T01:11:33.255Z",
+      "updated_at": "2023-11-29T23:43:29.032Z",
       "id": 119762,
       "schema": {
         "name": {
@@ -1682,17 +1682,17 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "videoSource",
+      "real_name": "DS Video Source",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-arrow-pointer",
       "component_group_name": "Digital Signage"
     },
     {
-      "name": "whatsOnPromo",
-      "display_name": "What's On Promo",
+      "name": "dsWhatsOnPromo",
+      "display_name": "DS What's On Promo",
       "created_at": "2023-11-19T22:14:46.097Z",
-      "updated_at": "2023-11-27T02:57:59.316Z",
+      "updated_at": "2023-11-29T23:43:41.897Z",
       "id": 119597,
       "schema": {
         "name": {
@@ -1807,7 +1807,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "What's On Promo",
+      "real_name": "DS What's On Promo",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
       "color": "#395ece",
       "icon": "block-text-img-r",
