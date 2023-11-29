@@ -27,3 +27,5 @@ localhost.pem
 # Local Netlify folder
 .netlify
 /*.pem
+/package-lock.json
+/.env.development

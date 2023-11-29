@@ -4,24 +4,33 @@ import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
 import react from "@astrojs/react";
 import vue from "@astrojs/vue";
+import { loadEnv } from "vite";
+import node from "@astrojs/node";
 import netlify from "@astrojs/netlify/functions";
 
 import compressor from "astro-compressor";
+const env = loadEnv(process.env.NODE_ENV, process.cwd(), "STORYBLOK");
 
 // https://astro.build/config
 export default defineConfig({
-  server: { port: 3000, host: true},
+  server: {
+    port: 3000,
+    host: true
+  },
+  image: {
+    remotePatterns: [{ protocol: "https" }],
+  },
   //base: 'auckland-museum',
   trailingSlash: 'never',
   integrations: [storyblok({
-    //accessToken: env.STORYBLOK_TOKEN,
-    accessToken: 'p3nWauZqXhuE8lNTLndLHgtt',
+    accessToken: env.STORYBLOK_TOKEN,
+    bridge: env.STORYBLOK_IS_PREVIEW === 'yes',
     apiOptions: {
       region: 'us'
     },
     components: {
       //www
-      page: 'components/storyblok/contentTypes/Page',
+      amPage: 'components/storyblok/contentTypes/Page',
       siteSection: 'components/storyblok/contentTypes/SiteSection',
       
       contentSection: 'components/storyblok/layout/ContentSection',
@@ -33,11 +42,6 @@ export default defineConfig({
       menuItem: 'components/storyblok/widgets/MenuItem',
       titleBlock: 'components/storyblok/widgets/TitleBlock',
       youtubeVideo: 'components/storyblok/widgets/YoutubeVideo',
-      //Digital Signage
-      screenLayout: 'components/storyblok/contentTypes/DigitalSignage/ScreenLayout',
-      panel: 'components/storyblok/widgets/DigitalSignage/Panel',
-      sharedPanel: 'components/storyblok/widgets/DigitalSignage/SharedPanel',
-      whatsOnPromo: 'components/storyblok/widgets/DigitalSignage/WhatsOnPromo',
     }
   }),
   tailwind(), 
@@ -58,7 +62,8 @@ export default defineConfig({
   react(), 
   vue(), 
   compressor()],
-  output: "server",
+  output: env.STORYBLOK_IS_PREVIEW === 'yes' ? 'server' : 'static',
+  ...(env.STORYBLOK_ENV === 'development' && {
   vite: {
     server: {
       host: "localhost",
@@ -67,10 +72,18 @@ export default defineConfig({
       headers: {
         "X-Frame-Options": "ALLOW-FROM https://app.storyblok.com",
         "Content-Security-Policy": "frame-ancestors https://app.storyblok.com;"
+        },
       }
     }
-  },
-  adapter: netlify({
+  }),
+  ...(env.STORYBLOK_ENV === 'development' && {
+    adapter: node({
+      mode: "standalone"
+    })
+  }),
+  ...(env.STORYBLOK_ENV === 'production' && {
+    adapter: netlify({
     
-  })
+    })
+  }),
 });
