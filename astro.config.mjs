@@ -60,8 +60,7 @@ export default defineConfig({
     }
   }), 
   react(), 
-  vue(), 
-  compressor()],
+  vue()],
   output: env.STORYBLOK_IS_PREVIEW === 'yes' ? 'server' : 'static',
   ...(env.STORYBLOK_ENV === 'development' && {
   vite: {
