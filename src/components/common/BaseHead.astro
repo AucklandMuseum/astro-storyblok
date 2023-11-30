@@ -4,6 +4,8 @@
 import type { ISbStoryData } from "@storyblok/astro";
 import "styles/global.css";
 
+const { page } = Astro.props;
+
 interface Props {
   page: ISbStoryData;
   section?: ISbStoryData;
@@ -14,10 +16,10 @@ interface Props {
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<!-- <link
-	rel="canonical"
-	href={"https://www.aucklandmuseum.com/page/" + page.fields.slug}
-/> -->
+<link
+  rel="canonical"
+  href=`https://www.aucklandmuseum.com/page/${page.full_slug}`
+/>
 <meta name="generator" content={Astro.generator} />
 
 <!-- Primary Meta Tags -->
