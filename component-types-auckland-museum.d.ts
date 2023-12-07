@@ -268,6 +268,9 @@ export interface AmYoutubeVideoStoryblok {
 
 export interface DsCopyBlockStoryblok {
   content?: RichtextStoryblok;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsCopyBlock";
   [k: string]: any;
@@ -275,6 +278,9 @@ export interface DsCopyBlockStoryblok {
 
 export interface DsHtmlBlockStoryblok {
   htmlCode?: string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsHtmlBlock";
   [k: string]: any;
@@ -284,6 +290,9 @@ export interface DsImageStoryblok {
   asset?: AssetStoryblok;
   width?: string;
   height?: string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsImage";
   [k: string]: any;
@@ -304,6 +313,9 @@ export interface DsImageLoopStoryblok {
   timing?: any;
   displayTime?: string;
   fadeTime?: string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   items?: MultiassetStoryblok;
   _uid: string;
   component: "dsImageLoop";
@@ -335,6 +347,9 @@ export interface DsPanelStoryblok {
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
   )[];
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsPanel";
   [k: string]: any;
@@ -370,6 +385,9 @@ export interface DsScreenLayoutStoryblok {
 export interface DsSharedPanelStoryblok {
   name: string;
   contentLookup?: StoryblokStory<ScreenStoryblok> | StoryblokStory<PanelStoryblok> | string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsSharedPanel";
   [k: string]: any;
@@ -377,6 +395,9 @@ export interface DsSharedPanelStoryblok {
 
 export interface DsSignageAliasStoryblok {
   sourceUrl?: StoryblokStory<ScreenLayoutStoryblok> | string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsSignageAlias";
   [k: string]: any;
@@ -384,6 +405,9 @@ export interface DsSignageAliasStoryblok {
 
 export interface DsVideoLoopStoryblok {
   videoAssets?: DsVideoSourceStoryblok[];
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsVideoLoop";
   [k: string]: any;
@@ -402,6 +426,9 @@ export interface DsVideoSourceStoryblok {
   position?: "" | "ds_bottom-left" | "ds_bottom-right" | "ds_top-left" | "ds_top-right";
   textColour?: "" | "ds-caption-light" | "ds-caption-dark";
   backgroundColour?: "" | "ds-caption-bg-light" | "ds-caption-bg-dark";
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsVideoSource";
   [k: string]: any;
@@ -419,6 +446,9 @@ export interface DsWhatsOnPromoStoryblok {
   performanceId?: string;
   tnewTitle?: string;
   manualTiming?: string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
   _uid: string;
   component: "dsWhatsOnPromo";
   [k: string]: any;

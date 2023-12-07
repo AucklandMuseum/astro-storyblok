@@ -817,7 +817,7 @@
       "name": "dsCopyBlock",
       "display_name": "DS Copy Block",
       "created_at": "2023-11-27T22:17:23.659Z",
-      "updated_at": "2023-11-29T23:40:24.284Z",
+      "updated_at": "2023-12-07T22:11:50.211Z",
       "id": 120970,
       "schema": {
         "content": {
@@ -857,6 +857,22 @@
               "name": "Centered Small"
             }
           ]
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 1,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 2
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 3
         }
       },
       "image": null,
@@ -876,14 +892,31 @@
       "name": "dsHtmlBlock",
       "display_name": "DS HTML Block",
       "created_at": "2023-11-27T21:32:48.761Z",
-      "updated_at": "2023-11-29T23:40:45.572Z",
+      "updated_at": "2023-12-07T22:12:06.156Z",
       "id": 120956,
       "schema": {
         "htmlCode": {
           "type": "textarea",
           "required": false,
           "field_type": "wysiwyg-tinymce",
-          "options": []
+          "options": [],
+          "pos": 0
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 1,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 2
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 3
         }
       },
       "image": null,
@@ -903,7 +936,7 @@
       "name": "dsImage",
       "display_name": "DS Image",
       "created_at": "2023-11-27T23:34:52.150Z",
-      "updated_at": "2023-11-29T23:41:05.160Z",
+      "updated_at": "2023-12-07T22:12:24.517Z",
       "id": 120984,
       "schema": {
         "asset": {
@@ -925,6 +958,22 @@
           "type": "number",
           "key": "height",
           "pos": 2
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 3,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 4
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 5
         }
       },
       "image": null,
@@ -944,7 +993,7 @@
       "name": "dsImageLoop",
       "display_name": "DS Image Loop",
       "created_at": "2023-11-21T21:19:11.041Z",
-      "updated_at": "2023-11-29T23:41:42.221Z",
+      "updated_at": "2023-12-07T22:17:15.397Z",
       "id": 120079,
       "schema": {
         "name": {
@@ -975,6 +1024,22 @@
           "decimals": 0,
           "pos": 3
         },
+        "scheduling": {
+          "type": "section",
+          "pos": 4,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 5
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 6
+        },
         "items": {
           "type": "multiasset",
           "minimum": 1,
@@ -986,7 +1051,8 @@
           "filetypes": [
             "images"
           ],
-          "asset_folder_id": 7238
+          "asset_folder_id": 7238,
+          "pos": 7
         }
       },
       "image": null,
@@ -1006,7 +1072,7 @@
       "name": "dsPanel",
       "display_name": "DS Panel",
       "created_at": "2023-11-14T00:46:49.092Z",
-      "updated_at": "2023-11-29T23:42:02.060Z",
+      "updated_at": "2023-12-07T22:12:53.193Z",
       "id": 118763,
       "schema": {
         "name": {
@@ -1211,6 +1277,22 @@
           "component_group_whitelist": [
             "e6222132-fbd6-475a-a415-d8e832cdc68e"
           ]
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 15,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 16
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 17
         }
       },
       "image": null,
@@ -1400,7 +1482,35 @@
       "is_root": true,
       "preview_tmpl": "{{name}}",
       "is_nestable": false,
-      "all_presets": [],
+      "all_presets": [
+        {
+          "id": 1482,
+          "name": "iPhone - BAU",
+          "component_id": 104493,
+          "image": "",
+          "color": "",
+          "icon": "block-mobile",
+          "description": ""
+        },
+        {
+          "id": 1475,
+          "name": "VW East - BAU",
+          "component_id": 104493,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        },
+        {
+          "id": 1477,
+          "name": "VW West - BAU",
+          "component_id": 104493,
+          "image": "",
+          "color": "",
+          "icon": "",
+          "description": ""
+        }
+      ],
       "preset_id": null,
       "real_name": "DS Screen Layout",
       "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
@@ -1412,7 +1522,7 @@
       "name": "dsSharedPanel",
       "display_name": "DS Shared Panel",
       "created_at": "2023-11-14T01:26:21.303Z",
-      "updated_at": "2023-11-29T23:42:37.020Z",
+      "updated_at": "2023-12-07T22:13:19.212Z",
       "id": 118765,
       "schema": {
         "name": {
@@ -1434,6 +1544,22 @@
           "folder_slug": "digital-signage/shared-panels",
           "pos": 1,
           "key": "contentId"
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 2,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 3
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 4
         }
       },
       "image": null,
@@ -1453,7 +1579,7 @@
       "name": "dsSignageAlias",
       "display_name": "DS Signage Alias",
       "created_at": "2023-11-22T20:31:35.990Z",
-      "updated_at": "2023-11-29T23:42:57.864Z",
+      "updated_at": "2023-12-07T22:13:34.004Z",
       "id": 120220,
       "schema": {
         "sourceUrl": {
@@ -1464,7 +1590,24 @@
             "screenLayout"
           ],
           "folder_slug": "digital-signage/",
-          "display_name": "Source Content"
+          "display_name": "Source Content",
+          "pos": 0
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 1,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 2
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 3
         }
       },
       "image": null,
@@ -1484,7 +1627,7 @@
       "name": "dsVideoLoop",
       "display_name": "DS Video Loop",
       "created_at": "2023-11-21T00:25:20.905Z",
-      "updated_at": "2023-11-29T23:43:29.117Z",
+      "updated_at": "2023-12-07T22:14:22.471Z",
       "id": 119760,
       "schema": {
         "videoAssets": {
@@ -1496,7 +1639,23 @@
           ],
           "component_group_whitelist": [],
           "key": "files",
-          "pos": 1
+          "pos": 0
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 1,
+          "keys": [
+            "publishTo",
+            "publishFrom"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 2
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 3
         }
       },
       "image": null,
@@ -1516,7 +1675,7 @@
       "name": "dsVideoSource",
       "display_name": "DS Video Source",
       "created_at": "2023-11-21T00:42:54.501Z",
-      "updated_at": "2023-11-29T23:43:29.032Z",
+      "updated_at": "2023-12-07T22:14:55.510Z",
       "id": 119762,
       "schema": {
         "name": {
@@ -1673,6 +1832,22 @@
               "name": "Dark"
             }
           ]
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 12,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 13
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 14
         }
       },
       "image": null,
@@ -1692,7 +1867,7 @@
       "name": "dsWhatsOnPromo",
       "display_name": "DS What's On Promo",
       "created_at": "2023-11-19T22:14:46.097Z",
-      "updated_at": "2023-11-29T23:43:41.897Z",
+      "updated_at": "2023-12-07T22:15:22.757Z",
       "id": 119597,
       "schema": {
         "name": {
@@ -1798,6 +1973,22 @@
           "type": "text",
           "description": "For things that are not in TNEW or are \"Every half hour on the hour\"",
           "pos": 12
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 13,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 14
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 15
         }
       },
       "image": null,
