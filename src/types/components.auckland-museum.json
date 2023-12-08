@@ -1624,6 +1624,51 @@
       "component_group_name": "Digital Signage"
     },
     {
+      "name": "dsTemplate",
+      "display_name": "DS Template",
+      "created_at": "2023-12-07T23:45:07.955Z",
+      "updated_at": "2023-12-07T23:46:31.853Z",
+      "id": 122934,
+      "schema": {
+        "name": {
+          "type": "text",
+          "pos": 0,
+          "required": true,
+          "no_translate": true,
+          "default_value": "Shared - ",
+          "key": "name"
+        },
+        "scheduling": {
+          "type": "section",
+          "pos": 2,
+          "keys": [
+            "publishFrom",
+            "publishTo"
+          ]
+        },
+        "publishFrom": {
+          "type": "datetime",
+          "pos": 3
+        },
+        "publishTo": {
+          "type": "datetime",
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": "<div>{{name}}</div>",
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "DS Template",
+      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "color": "",
+      "icon": "block-locked",
+      "component_group_name": "Digital Signage"
+    },
+    {
       "name": "dsVideoLoop",
       "display_name": "DS Video Loop",
       "created_at": "2023-11-21T00:25:20.905Z",

@@ -76,6 +76,7 @@ export interface AmHeroStoryblok {
     | DsScreenLayoutStoryblok
     | DsSharedPanelStoryblok
     | DsSignageAliasStoryblok
+    | DsTemplateStoryblok
     | DsVideoLoopStoryblok
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
@@ -195,6 +196,7 @@ export interface AmPageStoryblok {
     | DsScreenLayoutStoryblok
     | DsSharedPanelStoryblok
     | DsSignageAliasStoryblok
+    | DsTemplateStoryblok
     | DsVideoLoopStoryblok
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
@@ -219,6 +221,7 @@ export interface AmPageStoryblok {
     | DsScreenLayoutStoryblok
     | DsSharedPanelStoryblok
     | DsSignageAliasStoryblok
+    | DsTemplateStoryblok
     | DsVideoLoopStoryblok
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
@@ -343,6 +346,7 @@ export interface DsPanelStoryblok {
     | DsScreenLayoutStoryblok
     | DsSharedPanelStoryblok
     | DsSignageAliasStoryblok
+    | DsTemplateStoryblok
     | DsVideoLoopStoryblok
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
@@ -373,6 +377,7 @@ export interface DsScreenLayoutStoryblok {
     | DsScreenLayoutStoryblok
     | DsSharedPanelStoryblok
     | DsSignageAliasStoryblok
+    | DsTemplateStoryblok
     | DsVideoLoopStoryblok
     | DsVideoSourceStoryblok
     | DsWhatsOnPromoStoryblok
@@ -400,6 +405,16 @@ export interface DsSignageAliasStoryblok {
   publishTo?: string;
   _uid: string;
   component: "dsSignageAlias";
+  [k: string]: any;
+}
+
+export interface DsTemplateStoryblok {
+  name: string;
+  scheduling?: any;
+  publishFrom?: string;
+  publishTo?: string;
+  _uid: string;
+  component: "dsTemplate";
   [k: string]: any;
 }
 
