@@ -7,7 +7,7 @@ const { slug } = Astro.params;
 
 const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get(
-  `cdn/stories/auckland-museum/${slug === undefined ? "home" : slug}`,
+  `cdn/stories/auckland-museum/${slug === undefined ? "" : slug}`,
   {
     version: "draft",
   }
