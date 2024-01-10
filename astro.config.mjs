@@ -26,7 +26,7 @@ export default defineConfig({
     accessToken: env.STORYBLOK_TOKEN,
     bridge: env.STORYBLOK_IS_PREVIEW === 'yes',
     apiOptions: {
-      region: 'us'
+      region: 'ap'
     },
     components: {
       //Page Types
