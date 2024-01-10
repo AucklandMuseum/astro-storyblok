@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 import vue from "@astrojs/vue";
 import { loadEnv } from "vite";
 import node from "@astrojs/node";
-import netlify from "@astrojs/netlify/functions";
+import netlify from "@astrojs/netlify";
 
 import compressor from "astro-compressor";
 const env = loadEnv(process.env.NODE_ENV, process.cwd(), "STORYBLOK");
@@ -16,9 +16,6 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true
-  },
-  image: {
-    remotePatterns: [{ protocol: "https" }],
   },
   //base: 'auckland-museum',
   trailingSlash: 'never',
