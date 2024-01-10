@@ -17,6 +17,13 @@ export default defineConfig({
     port: 3000,
     host: true
   },
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "mi"],
+    routing: {
+      prefixDefaultLocale: false
+    }
+  },
   //base: 'auckland-museum',
   trailingSlash: 'never',
   integrations: [storyblok({
