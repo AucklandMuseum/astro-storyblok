@@ -3,9 +3,9 @@
     {
       "name": "amContentSection",
       "display_name": "AM Content Section",
-      "created_at": "2023-08-14T22:44:48.277Z",
-      "updated_at": "2023-11-29T21:14:53.430Z",
-      "id": 97864,
+      "created_at": "2024-01-10T00:17:16.157Z",
+      "updated_at": "2024-01-10T00:17:16.157Z",
+      "id": 135,
       "schema": {
         "Setup": {
           "type": "section",
@@ -160,7 +160,7 @@
           "restrict_components": true,
           "component_whitelist": [],
           "component_group_whitelist": [
-            "0c457627-0902-43b5-a440-cbfe149f3203"
+            "54ccc8f3-7074-43d9-a3c5-e84018e00a0c"
           ],
           "pos": 6
         }
@@ -173,7 +173,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Content Section",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-block",
       "component_group_name": "AWMM"
@@ -181,9 +181,9 @@
     {
       "name": "amCopyBlock",
       "display_name": "AM Copy Block",
-      "created_at": "2023-08-14T23:07:47.831Z",
-      "updated_at": "2023-11-29T21:15:11.943Z",
-      "id": 97865,
+      "created_at": "2024-01-10T00:17:16.826Z",
+      "updated_at": "2024-01-10T00:17:16.826Z",
+      "id": 136,
       "schema": {
         "content": {
           "type": "richtext",
@@ -250,7 +250,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Copy Block",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-text-c",
       "component_group_name": "AWMM"
@@ -258,9 +258,9 @@
     {
       "name": "amHero",
       "display_name": "AM Hero",
-      "created_at": "2023-08-14T23:32:46.601Z",
-      "updated_at": "2023-11-29T21:15:24.965Z",
-      "id": 97872,
+      "created_at": "2024-01-10T00:17:17.444Z",
+      "updated_at": "2024-01-10T00:17:17.444Z",
+      "id": 137,
       "schema": {
         "name": {
           "type": "text",
@@ -335,7 +335,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Hero",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-text-img-l",
       "component_group_name": "AWMM"
@@ -343,9 +343,9 @@
     {
       "name": "amHtmlBlock",
       "display_name": "AM HTML Block",
-      "created_at": "2023-08-15T00:07:25.763Z",
-      "updated_at": "2023-11-29T21:15:40.721Z",
-      "id": 97878,
+      "created_at": "2024-01-10T00:17:18.037Z",
+      "updated_at": "2024-01-10T00:17:18.037Z",
+      "id": 138,
       "schema": {
         "htmlCode": {
           "type": "textarea",
@@ -362,7 +362,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM HTML Block",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-keyboard",
       "component_group_name": "AWMM"
@@ -370,9 +370,9 @@
     {
       "name": "amImage",
       "display_name": "AM Image",
-      "created_at": "2023-08-16T21:06:44.111Z",
-      "updated_at": "2023-11-29T21:16:06.957Z",
-      "id": 98270,
+      "created_at": "2024-01-10T00:17:18.661Z",
+      "updated_at": "2024-01-10T00:17:18.661Z",
+      "id": 139,
       "schema": {
         "Image": {
           "type": "asset",
@@ -391,7 +391,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Image",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-image",
       "component_group_name": "AWMM"
@@ -399,9 +399,9 @@
     {
       "name": "amLinkImageButton",
       "display_name": "AM Link/Image/Button",
-      "created_at": "2023-08-14T23:56:41.257Z",
-      "updated_at": "2023-11-29T21:16:25.861Z",
-      "id": 97876,
+      "created_at": "2024-01-10T00:17:19.281Z",
+      "updated_at": "2024-01-10T00:17:19.281Z",
+      "id": 140,
       "schema": {
         "name": {
           "type": "text",
@@ -452,7 +452,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Link/Image/Button",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-arrow-pointer",
       "component_group_name": "AWMM"
@@ -460,9 +460,9 @@
     {
       "name": "amMenuItem",
       "display_name": "AM Menu Item",
-      "created_at": "2023-08-14T22:14:03.922Z",
-      "updated_at": "2023-11-29T21:16:41.361Z",
-      "id": 97861,
+      "created_at": "2024-01-10T00:17:19.904Z",
+      "updated_at": "2024-01-10T00:17:19.904Z",
+      "id": 141,
       "schema": {
         "title": {
           "type": "text",
@@ -500,7 +500,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Menu Item",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#fbce41",
       "icon": "block-text-l",
       "component_group_name": "AWMM"
@@ -508,9 +508,9 @@
     {
       "name": "amPage",
       "display_name": "AM Page",
-      "created_at": "2023-08-14T21:14:14.809Z",
-      "updated_at": "2023-11-26T21:46:45.251Z",
-      "id": 97852,
+      "created_at": "2024-01-10T00:17:20.495Z",
+      "updated_at": "2024-01-10T00:17:20.495Z",
+      "id": 142,
       "schema": {
         "body": {
           "type": "bloks",
@@ -525,20 +525,10 @@
       "is_root": true,
       "preview_tmpl": null,
       "is_nestable": true,
-      "all_presets": [
-        {
-          "id": 918,
-          "name": "Standard",
-          "component_id": 97852,
-          "image": "",
-          "color": "",
-          "icon": "",
-          "description": ""
-        }
-      ],
+      "all_presets": [],
       "preset_id": null,
       "real_name": "AM Page",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#2db47d",
       "icon": "block-text-img-r",
       "component_group_name": "AWMM"
@@ -546,9 +536,9 @@
     {
       "name": "amSiteSection",
       "display_name": "AM Site Section",
-      "created_at": "2023-08-14T21:15:43.845Z",
-      "updated_at": "2023-11-29T21:16:55.738Z",
-      "id": 97856,
+      "created_at": "2024-01-10T00:17:21.079Z",
+      "updated_at": "2024-01-10T00:17:21.079Z",
+      "id": 143,
       "schema": {
         "title": {
           "type": "text",
@@ -635,7 +625,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Site Section",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#2db47d",
       "icon": "block-text-img-c",
       "component_group_name": "AWMM"
@@ -643,9 +633,9 @@
     {
       "name": "amTitleBlock",
       "display_name": "AM Title Block",
-      "created_at": "2023-08-14T23:51:02.909Z",
-      "updated_at": "2023-11-29T21:17:16.974Z",
-      "id": 97875,
+      "created_at": "2024-01-10T00:17:21.701Z",
+      "updated_at": "2024-01-10T00:17:21.701Z",
+      "id": 144,
       "schema": {
         "behaviour": {
           "type": "option",
@@ -709,7 +699,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM Title Block",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-1-2block",
       "component_group_name": "AWMM"
@@ -717,9 +707,9 @@
     {
       "name": "amYoutubeVideo",
       "display_name": "AM YouTube Video",
-      "created_at": "2023-08-15T00:01:50.115Z",
-      "updated_at": "2023-11-29T21:17:37.586Z",
-      "id": 97877,
+      "created_at": "2024-01-10T00:17:22.292Z",
+      "updated_at": "2024-01-10T00:17:22.292Z",
+      "id": 145,
       "schema": {
         "videoURL": {
           "type": "text",
@@ -808,7 +798,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "AM YouTube Video",
-      "component_group_uuid": "0c457627-0902-43b5-a440-cbfe149f3203",
+      "component_group_uuid": "54ccc8f3-7074-43d9-a3c5-e84018e00a0c",
       "color": "#ff6159",
       "icon": "block-monitor",
       "component_group_name": "AWMM"
@@ -816,9 +806,9 @@
     {
       "name": "dsCopyBlock",
       "display_name": "DS Copy Block",
-      "created_at": "2023-11-27T22:17:23.659Z",
-      "updated_at": "2023-12-07T22:11:50.211Z",
-      "id": 120970,
+      "created_at": "2024-01-10T00:17:22.895Z",
+      "updated_at": "2024-01-23T22:47:27.567Z",
+      "id": 146,
       "schema": {
         "content": {
           "type": "richtext",
@@ -863,7 +853,8 @@
           "pos": 1,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -873,6 +864,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 3
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -883,7 +877,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Copy Block",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-text-c",
       "component_group_name": "Digital Signage"
@@ -891,9 +885,9 @@
     {
       "name": "dsHtmlBlock",
       "display_name": "DS HTML Block",
-      "created_at": "2023-11-27T21:32:48.761Z",
-      "updated_at": "2023-12-07T22:12:06.156Z",
-      "id": 120956,
+      "created_at": "2024-01-10T00:17:23.480Z",
+      "updated_at": "2024-01-23T22:47:42.322Z",
+      "id": 147,
       "schema": {
         "htmlCode": {
           "type": "textarea",
@@ -907,7 +901,8 @@
           "pos": 1,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -917,6 +912,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 3
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -927,7 +925,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS HTML Block",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-keyboard",
       "component_group_name": "Digital Signage"
@@ -935,9 +933,9 @@
     {
       "name": "dsImage",
       "display_name": "DS Image",
-      "created_at": "2023-11-27T23:34:52.150Z",
-      "updated_at": "2023-12-07T22:12:24.517Z",
-      "id": 120984,
+      "created_at": "2024-01-10T00:17:24.072Z",
+      "updated_at": "2024-01-14T21:37:54.959Z",
+      "id": 148,
       "schema": {
         "asset": {
           "type": "asset",
@@ -949,19 +947,27 @@
           "key": "Image",
           "pos": 0
         },
+        "Size": {
+          "type": "section",
+          "pos": 1,
+          "keys": [
+            "width",
+            "height"
+          ]
+        },
         "width": {
           "type": "number",
           "key": "width",
-          "pos": 1
+          "pos": 2
         },
         "height": {
           "type": "number",
           "key": "height",
-          "pos": 2
+          "pos": 3
         },
         "scheduling": {
           "type": "section",
-          "pos": 3,
+          "pos": 4,
           "keys": [
             "publishFrom",
             "publishTo"
@@ -969,22 +975,22 @@
         },
         "publishFrom": {
           "type": "datetime",
-          "pos": 4
+          "pos": 5
         },
         "publishTo": {
           "type": "datetime",
-          "pos": 5
+          "pos": 6
         }
       },
       "image": null,
       "preview_field": "Image",
       "is_root": true,
-      "preview_tmpl": null,
+      "preview_tmpl": "{{@image(it.asset.filename)/}} ",
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Image",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-image",
       "component_group_name": "Digital Signage"
@@ -992,9 +998,9 @@
     {
       "name": "dsImageLoop",
       "display_name": "DS Image Loop",
-      "created_at": "2023-11-21T21:19:11.041Z",
-      "updated_at": "2023-12-07T22:17:15.397Z",
-      "id": 120079,
+      "created_at": "2024-01-10T00:17:24.662Z",
+      "updated_at": "2024-01-23T22:49:07.020Z",
+      "id": 149,
       "schema": {
         "name": {
           "type": "text",
@@ -1029,7 +1035,8 @@
           "pos": 4,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1039,6 +1046,10 @@
         "publishTo": {
           "type": "datetime",
           "pos": 6
+        },
+        "hidePreview": {
+          "type": "boolean",
+          "pos": 7
         },
         "items": {
           "type": "multiasset",
@@ -1052,7 +1063,7 @@
             "images"
           ],
           "asset_folder_id": 7238,
-          "pos": 7
+          "pos": 8
         }
       },
       "image": null,
@@ -1063,7 +1074,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Image Loop",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-@",
       "component_group_name": "Digital Signage"
@@ -1071,9 +1082,9 @@
     {
       "name": "dsPanel",
       "display_name": "DS Panel",
-      "created_at": "2023-11-14T00:46:49.092Z",
-      "updated_at": "2023-12-07T22:12:53.193Z",
-      "id": 118763,
+      "created_at": "2024-01-10T00:17:25.295Z",
+      "updated_at": "2024-01-23T22:49:23.477Z",
+      "id": 150,
       "schema": {
         "name": {
           "type": "text",
@@ -1140,7 +1151,10 @@
             }
           ],
           "default_value": "FHD",
-          "key": "resolution"
+          "key": "resolution",
+          "source": "internal",
+          "datasource_slug": "screen-size",
+          "exclude_empty_option": true
         },
         "orientation": {
           "type": "option",
@@ -1161,7 +1175,8 @@
           "default_value": "H",
           "source": "internal",
           "datasource_slug": "screen-orientation",
-          "key": "orientation"
+          "key": "orientation",
+          "exclude_empty_option": true
         },
         "panelFlow": {
           "type": "option",
@@ -1275,7 +1290,7 @@
           "restrict_components": true,
           "component_whitelist": [],
           "component_group_whitelist": [
-            "e6222132-fbd6-475a-a415-d8e832cdc68e"
+            "3b1c1c91-699b-47aa-803e-c93d35595073"
           ]
         },
         "scheduling": {
@@ -1283,7 +1298,8 @@
           "pos": 15,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1293,6 +1309,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 17
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1303,7 +1322,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Panel",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-monitor",
       "component_group_name": "Digital Signage"
@@ -1311,9 +1330,9 @@
     {
       "name": "dsScreenLayout",
       "display_name": "DS Screen Layout",
-      "created_at": "2023-09-03T23:38:30.460Z",
-      "updated_at": "2023-11-29T23:42:17.778Z",
-      "id": 104493,
+      "created_at": "2024-01-10T00:17:25.928Z",
+      "updated_at": "2024-01-10T00:17:25.928Z",
+      "id": 151,
       "schema": {
         "size": {
           "type": "section",
@@ -1473,7 +1492,7 @@
           "component_whitelist": [],
           "key": "content",
           "component_group_whitelist": [
-            "e6222132-fbd6-475a-a415-d8e832cdc68e"
+            "3b1c1c91-699b-47aa-803e-c93d35595073"
           ]
         }
       },
@@ -1484,36 +1503,18 @@
       "is_nestable": false,
       "all_presets": [
         {
-          "id": 1482,
-          "name": "iPhone - BAU",
-          "component_id": 104493,
-          "image": "",
-          "color": "",
-          "icon": "block-mobile",
-          "description": ""
-        },
-        {
-          "id": 1475,
-          "name": "VW East - BAU",
-          "component_id": 104493,
-          "image": "",
+          "id": 7,
+          "name": "BAU - East",
+          "component_id": 151,
+          "image": "//a-ap.storyblok.com/f/3000021/x/a7c8bfe2bc/screenshot-2024-01-11-103612.jpg",
           "color": "",
           "icon": "",
-          "description": ""
-        },
-        {
-          "id": 1477,
-          "name": "VW West - BAU",
-          "component_id": 104493,
-          "image": "",
-          "color": "",
-          "icon": "",
-          "description": ""
+          "description": "4 Columns with pricing and video"
         }
       ],
       "preset_id": null,
       "real_name": "DS Screen Layout",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-1-2block",
       "component_group_name": "Digital Signage"
@@ -1521,9 +1522,9 @@
     {
       "name": "dsSharedPanel",
       "display_name": "DS Shared Panel",
-      "created_at": "2023-11-14T01:26:21.303Z",
-      "updated_at": "2023-12-07T22:13:19.212Z",
-      "id": 118765,
+      "created_at": "2024-01-10T00:17:26.536Z",
+      "updated_at": "2024-01-23T22:51:08.803Z",
+      "id": 152,
       "schema": {
         "name": {
           "type": "text",
@@ -1539,7 +1540,8 @@
           "source": "internal_stories",
           "filter_content_type": [
             "screen",
-            "panel"
+            "panel",
+            "dsPanel"
           ],
           "folder_slug": "digital-signage/shared-panels",
           "pos": 1,
@@ -1550,7 +1552,8 @@
           "pos": 2,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1560,6 +1563,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 4
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1570,7 +1576,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Shared Panel",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-share",
       "component_group_name": "Digital Signage"
@@ -1578,16 +1584,18 @@
     {
       "name": "dsSignageAlias",
       "display_name": "DS Signage Alias",
-      "created_at": "2023-11-22T20:31:35.990Z",
-      "updated_at": "2023-12-07T22:13:34.004Z",
-      "id": 120220,
+      "created_at": "2024-01-10T00:17:27.158Z",
+      "updated_at": "2024-01-23T22:51:28.648Z",
+      "id": 153,
       "schema": {
         "sourceUrl": {
           "type": "option",
           "use_uuid": true,
           "source": "internal_stories",
           "filter_content_type": [
-            "screenLayout"
+            "screenLayout",
+            "dsScreenLayout",
+            "dsPanel"
           ],
           "folder_slug": "digital-signage/",
           "display_name": "Source Content",
@@ -1598,7 +1606,8 @@
           "pos": 1,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1608,6 +1617,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 3
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1618,7 +1630,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Signage Alias",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-tag",
       "component_group_name": "Digital Signage"
@@ -1626,9 +1638,9 @@
     {
       "name": "dsTemplate",
       "display_name": "DS Template",
-      "created_at": "2023-12-07T23:45:07.955Z",
-      "updated_at": "2023-12-07T23:46:31.853Z",
-      "id": 122934,
+      "created_at": "2024-01-10T00:17:27.792Z",
+      "updated_at": "2024-01-23T22:46:31.186Z",
+      "id": 154,
       "schema": {
         "name": {
           "type": "text",
@@ -1643,7 +1655,8 @@
           "pos": 2,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1653,6 +1666,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 4
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1663,7 +1679,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Template",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "",
       "icon": "block-locked",
       "component_group_name": "Digital Signage"
@@ -1671,9 +1687,9 @@
     {
       "name": "dsVideoLoop",
       "display_name": "DS Video Loop",
-      "created_at": "2023-11-21T00:25:20.905Z",
-      "updated_at": "2023-12-07T22:14:22.471Z",
-      "id": 119760,
+      "created_at": "2024-01-10T00:17:28.397Z",
+      "updated_at": "2024-01-23T22:51:46.585Z",
+      "id": 155,
       "schema": {
         "videoAssets": {
           "type": "bloks",
@@ -1691,7 +1707,8 @@
           "pos": 1,
           "keys": [
             "publishTo",
-            "publishFrom"
+            "publishFrom",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -1701,6 +1718,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 3
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1711,7 +1731,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Video Loop",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-resize-fc",
       "component_group_name": "Digital Signage"
@@ -1719,23 +1739,30 @@
     {
       "name": "dsVideoSource",
       "display_name": "DS Video Source",
-      "created_at": "2023-11-21T00:42:54.501Z",
-      "updated_at": "2023-12-07T22:14:55.510Z",
-      "id": 119762,
+      "created_at": "2024-01-10T00:17:28.987Z",
+      "updated_at": "2024-01-23T22:52:08.384Z",
+      "id": 156,
       "schema": {
         "name": {
           "type": "text",
           "key": "name",
-          "pos": 0
+          "pos": 0,
+          "filetypes": [
+            "videos"
+          ]
         },
-        "videoURL": {
-          "type": "text",
+        "videoAsset": {
+          "type": "asset",
           "allow_custom_attributes": false,
           "restrict_content_types": false,
           "component_whitelist": [],
-          "display_name": "Video URL",
+          "display_name": "Video Asset",
           "key": "videoURL",
-          "pos": 1
+          "pos": 1,
+          "filetypes": [
+            "videos"
+          ],
+          "required": true
         },
         "caption": {
           "type": "section",
@@ -1863,7 +1890,7 @@
         "backgroundColour": {
           "type": "option",
           "use_uuid": true,
-          "key": "bacgroundColout",
+          "key": "backgroundColour",
           "pos": 11,
           "options": [
             {
@@ -1883,16 +1910,23 @@
           "pos": 12,
           "keys": [
             "publishFrom",
-            "publishTo"
-          ]
+            "publishTo",
+            "hidePreview"
+          ],
+          "key": "scheduling"
         },
         "publishFrom": {
           "type": "datetime",
-          "pos": 13
+          "pos": 13,
+          "key": "publishFrom"
         },
         "publishTo": {
           "type": "datetime",
-          "pos": 14
+          "pos": 14,
+          "key": "publishTo"
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -1903,7 +1937,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS Video Source",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-arrow-pointer",
       "component_group_name": "Digital Signage"
@@ -1911,9 +1945,9 @@
     {
       "name": "dsWhatsOnPromo",
       "display_name": "DS What's On Promo",
-      "created_at": "2023-11-19T22:14:46.097Z",
-      "updated_at": "2023-12-07T22:15:22.757Z",
-      "id": 119597,
+      "created_at": "2024-01-10T00:17:29.600Z",
+      "updated_at": "2024-01-23T22:52:27.005Z",
+      "id": 157,
       "schema": {
         "name": {
           "type": "text",
@@ -2024,7 +2058,8 @@
           "pos": 13,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -2034,6 +2069,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 15
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,
@@ -2044,7 +2082,7 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "DS What's On Promo",
-      "component_group_uuid": "e6222132-fbd6-475a-a415-d8e832cdc68e",
+      "component_group_uuid": "3b1c1c91-699b-47aa-803e-c93d35595073",
       "color": "#395ece",
       "icon": "block-text-img-r",
       "component_group_name": "Digital Signage"

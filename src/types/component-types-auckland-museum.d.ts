@@ -274,6 +274,7 @@ export interface DsCopyBlockStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsCopyBlock";
   [k: string]: any;
@@ -284,6 +285,7 @@ export interface DsHtmlBlockStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsHtmlBlock";
   [k: string]: any;
@@ -291,6 +293,7 @@ export interface DsHtmlBlockStoryblok {
 
 export interface DsImageStoryblok {
   asset?: AssetStoryblok;
+  Size?: any;
   width?: string;
   height?: string;
   scheduling?: any;
@@ -319,6 +322,7 @@ export interface DsImageLoopStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   items?: MultiassetStoryblok;
   _uid: string;
   component: "dsImageLoop";
@@ -330,8 +334,8 @@ export interface DsPanelStoryblok {
   size?: any;
   widthNumber?: string;
   heightNumber?: string;
-  resolution?: "" | "SD" | "HD" | "FHD" | "UHD";
-  orientation?: "" | "horizontal" | "vertical";
+  resolution?: "SD" | "HD" | "FHD" | "UHD";
+  orientation?: "horizontal" | "vertical";
   panelFlow?: "column" | "row";
   itemAlignment?: "" | "align-items: center;";
   colours?: any;
@@ -354,6 +358,7 @@ export interface DsPanelStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsPanel";
   [k: string]: any;
@@ -389,20 +394,30 @@ export interface DsScreenLayoutStoryblok {
 
 export interface DsSharedPanelStoryblok {
   name: string;
-  contentLookup?: StoryblokStory<ScreenStoryblok> | StoryblokStory<PanelStoryblok> | string;
+  contentLookup?:
+    | StoryblokStory<ScreenStoryblok>
+    | StoryblokStory<PanelStoryblok>
+    | StoryblokStory<DsPanelStoryblok>
+    | string;
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsSharedPanel";
   [k: string]: any;
 }
 
 export interface DsSignageAliasStoryblok {
-  sourceUrl?: StoryblokStory<ScreenLayoutStoryblok> | string;
+  sourceUrl?:
+    | StoryblokStory<ScreenLayoutStoryblok>
+    | StoryblokStory<DsScreenLayoutStoryblok>
+    | StoryblokStory<DsPanelStoryblok>
+    | string;
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsSignageAlias";
   [k: string]: any;
@@ -413,6 +428,7 @@ export interface DsTemplateStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsTemplate";
   [k: string]: any;
@@ -423,6 +439,7 @@ export interface DsVideoLoopStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsVideoLoop";
   [k: string]: any;
@@ -430,7 +447,7 @@ export interface DsVideoLoopStoryblok {
 
 export interface DsVideoSourceStoryblok {
   name?: string;
-  videoURL?: string;
+  videoAsset: AssetStoryblok;
   caption?: any;
   folTitle?: RichtextStoryblok;
   eolTitle?: RichtextStoryblok;
@@ -444,6 +461,7 @@ export interface DsVideoSourceStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsVideoSource";
   [k: string]: any;
@@ -464,6 +482,7 @@ export interface DsWhatsOnPromoStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsWhatsOnPromo";
   [k: string]: any;
