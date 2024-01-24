@@ -934,7 +934,7 @@
       "name": "dsImage",
       "display_name": "DS Image",
       "created_at": "2024-01-10T00:17:24.072Z",
-      "updated_at": "2024-01-14T21:37:54.959Z",
+      "updated_at": "2024-01-24T00:50:59.973Z",
       "id": 148,
       "schema": {
         "asset": {
@@ -970,7 +970,8 @@
           "pos": 4,
           "keys": [
             "publishFrom",
-            "publishTo"
+            "publishTo",
+            "hidePreview"
           ]
         },
         "publishFrom": {
@@ -980,6 +981,9 @@
         "publishTo": {
           "type": "datetime",
           "pos": 6
+        },
+        "hidePreview": {
+          "type": "boolean"
         }
       },
       "image": null,

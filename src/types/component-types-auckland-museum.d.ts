@@ -299,6 +299,7 @@ export interface DsImageStoryblok {
   scheduling?: any;
   publishFrom?: string;
   publishTo?: string;
+  hidePreview?: boolean;
   _uid: string;
   component: "dsImage";
   [k: string]: any;
